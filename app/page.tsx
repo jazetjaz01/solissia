@@ -72,6 +72,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[2fr_3fr] lg:gap-16 lg:px-8">
+        <div className="relative h-64 sm:h-80 md:order-last md:h-[480px]">
+          <Image
+            src="/images/home/sourcing2.jpg"
+            alt=""
+            fill
+            sizes="(min-width: 768px) 60vw, 100vw"
+            className="object-cover"
+          />
+        </div>
+        <div>
+          <h2 className="text-center text-2xl font-semibold leading-tight text-black sm:text-4xl">
+            Des solutions sur-mesure
+          </h2>
+          <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-amber-300" />
+          <div className="mt-8 space-y-4 text-lg leading-relaxed text-black/80">
+            <p>
+              Experts en fruits et légumes frais, nous garantissons des
+              solutions sur-mesure à nos clients, distributeurs, grossistes et
+              importateurs.Quelque soit les quantités et la destination, nous oeuvrons pour trouver la solution la plus efficace aux besoins de nos clients.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
