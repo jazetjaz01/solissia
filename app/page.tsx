@@ -40,17 +40,17 @@ export default function Home() {
         </div>
       </section>
       <HomeSlider />
-      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[3fr_2fr] md:px-[calc(1.5rem+3.25rem)] lg:gap-16 lg:px-[calc(2rem+3.25rem)]">
+      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:gap-0 md:pb-0 md:px-[calc(1.5rem+3.25rem)] lg:px-[calc(2rem+3.25rem)]">
         <div className="relative h-64 sm:h-80 md:h-[480px]">
           <Image
             src="/images/home/sourcing1.jpg"
             alt=""
             fill
-            sizes="(min-width: 768px) 60vw, 100vw"
+            sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"
           />
         </div>
-        <div>
+        <div className="md:px-10 lg:px-16">
           <h2 className="text-center text-2xl font-semibold leading-tight text-black sm:text-4xl">
             Solissia est expert en sourcing
           </h2>
@@ -72,17 +72,17 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[2fr_3fr] md:px-[calc(1.5rem+3.25rem)] lg:gap-16 lg:px-[calc(2rem+3.25rem)]">
+      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:gap-0 md:pt-0 md:px-[calc(1.5rem+3.25rem)] lg:px-[calc(2rem+3.25rem)]">
         <div className="relative h-64 sm:h-80 md:order-last md:h-[480px]">
           <Image
             src="/images/home/sourcing2.jpg"
             alt=""
             fill
-            sizes="(min-width: 768px) 60vw, 100vw"
+            sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"
           />
         </div>
-        <div>
+        <div className="md:px-10 lg:px-16">
           <h2 className="text-center text-2xl font-semibold leading-tight text-black sm:text-4xl">
             Des solutions sur-mesure
           </h2>
