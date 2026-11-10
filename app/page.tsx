@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HomeSlider } from "@/components/home-slider";
 
 export default function Home() {
   return (
@@ -13,13 +14,13 @@ export default function Home() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative mx-auto flex h-full max-w-(--breakpoint-xl) items-center justify-center px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto flex h-full max-w-(--breakpoint-2xl) items-center justify-center px-4 sm:px-6 lg:px-8">
           <h1 className="max-w-3xl text-center text-3xl font-semibold leading-tight text-white sm:text-5xl">
             Votre intermédiaire import-export, du fournisseur à la livraison
           </h1>
         </div>
       </section>
-      <section className="mx-auto max-w-(--breakpoint-xl) px-4 py-12 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-(--breakpoint-2xl) px-4 py-12 sm:px-6 lg:px-8">
         <p className="mx-auto max-w-3xl text-center text-xl leading-relaxed text-black sm:text-4xl font-semibold ">
           Solissia recherche, négocie et sécurise vos achats et vos ventes à
           l&apos;international.
@@ -38,6 +39,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <HomeSlider />
     </main>
   );
 }
