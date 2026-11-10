@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex-1">
       <section className="relative h-[60vh]">
         <Image
-          src="/images/home/sourcing1.jpg"
+          src="/images/home/home1.jpg"
           alt=""
           fill
           priority
@@ -43,7 +43,7 @@ export default function Home() {
       <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[3fr_2fr] lg:gap-16 lg:px-8">
         <div className="relative h-64 sm:h-80 md:h-[480px]">
           <Image
-            src="/images/home/home1.jpg"
+            src="/images/home/sourcing1.jpg"
             alt=""
             fill
             sizes="(min-width: 768px) 60vw, 100vw"
