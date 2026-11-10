@@ -1,43 +1,16 @@
 "use client";
 
-import Link from "next/link";
+import { Menu } from "@base-ui/react/menu";
+import { Globe } from "lucide-react";
+import NextLink from "next/link";
 import { usePathname } from "next/navigation";
-import { useId } from "react";
 import { localeCookie, locales, type Locale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
-const FlagFr = () => (
-  <svg viewBox="0 0 3 2" className="h-full w-full">
-    <path fill="#002654" d="M0 0h1v2H0z" />
-    <path fill="#fff" d="M1 0h1v2H1z" />
-    <path fill="#ce1126" d="M2 0h1v2H2z" />
-  </svg>
-);
-
-const FlagGb = () => {
-  const id = useId();
-  return (
-    <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" className="h-full w-full">
-      <clipPath id={`${id}-s`}>
-        <path d="M0 0v30h60V0z" />
-      </clipPath>
-      <clipPath id={`${id}-t`}>
-        <path d="M30 15h30v15zv15H0zH0V0zV0h30z" />
-      </clipPath>
-      <g clipPath={`url(#${id}-s)`}>
-        <path d="M0 0v30h60V0z" fill="#012169" />
-        <path d="M0 0l60 30m0-30L0 30" stroke="#fff" strokeWidth="6" />
-        <path d="M0 0l60 30m0-30L0 30" clipPath={`url(#${id}-t)`} stroke="#c8102e" strokeWidth="4" />
-        <path d="M30 0v30M0 15h60" stroke="#fff" strokeWidth="10" />
-        <path d="M30 0v30M0 15h60" stroke="#c8102e" strokeWidth="6" />
-      </g>
-    </svg>
-  );
-};
-
-const languages: Record<Locale, { name: string; Flag: () => React.ReactElement }> = {
-  fr: { name: "Français", Flag: FlagFr },
-  en: { name: "English", Flag: FlagGb },
+// Each language is written in its own language, as on most multilingual sites.
+const languageNames: Record<Locale, string> = {
+  fr: "Français",
+  en: "English",
 };
 
 export const LanguageSwitcher = ({
@@ -54,34 +27,42 @@ export const LanguageSwitcher = ({
     pathname.replace(/^\/[^/]+/, `/${locale}`) || `/${locale}`;
 
   return (
-    <ul aria-label={label} className="flex items-center gap-2">
-      {locales.map((locale) => {
-        const { name, Flag } = languages[locale];
-        const active = locale === current;
-        return (
-          <li key={locale}>
-            <Link
-              href={hrefFor(locale)}
-              hrefLang={locale}
-              lang={locale}
-              aria-label={name}
-              aria-current={active ? "true" : undefined}
-              title={name}
-              onClick={() => {
-                document.cookie = `${localeCookie}=${locale}; path=/; max-age=31536000; samesite=lax`;
-              }}
-              className={cn(
-                "block h-5 w-7 overflow-hidden rounded-sm ring-1 ring-black/10 transition-opacity",
-                active
-                  ? "ring-2 ring-current"
-                  : "opacity-50 hover:opacity-100 focus-visible:opacity-100",
-              )}
-            >
-              <Flag />
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+    <Menu.Root>
+      <Menu.Trigger
+        aria-label={`${label} : ${languageNames[current]}`}
+        className="flex flex-col items-center gap-0.5 rounded-lg px-2 py-1 text-xs font-medium uppercase outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+      >
+        <Globe className="size-5" strokeWidth={1.5} />
+        {current}
+      </Menu.Trigger>
+      <Menu.Portal>
+        <Menu.Positioner sideOffset={10} className="z-50">
+          <Menu.Popup className="rounded-2xl bg-white px-3 py-3 text-black shadow-lg ring-1 ring-black/5 outline-none">
+            <Menu.Arrow className="size-3 rotate-45 bg-white data-[side=bottom]:-top-1.5" />
+            {locales.map((locale) => (
+              <Menu.LinkItem
+                key={locale}
+                closeOnClick
+                render={<NextLink href={hrefFor(locale)} />}
+                hrefLang={locale}
+                lang={locale}
+                aria-current={locale === current ? "true" : undefined}
+                onClick={() => {
+                  document.cookie = `${localeCookie}=${locale}; path=/; max-age=31536000; samesite=lax`;
+                }}
+                className={cn(
+                  "block rounded-full px-4 py-1 text-center text-sm uppercase tracking-wide outline-none",
+                  locale === current
+                    ? "bg-amber-300"
+                    : "data-highlighted:bg-muted",
+                )}
+              >
+                {languageNames[locale]}
+              </Menu.LinkItem>
+            ))}
+          </Menu.Popup>
+        </Menu.Positioner>
+      </Menu.Portal>
+    </Menu.Root>
   );
 };
