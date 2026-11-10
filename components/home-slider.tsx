@@ -4,29 +4,36 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import type { Dictionary } from "@/app/[lang]/dictionaries";
+import { format } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
-const slides = [
+// Titles and texts come from the dictionaries, in the same order.
+const slideStyles = [
   {
     image: "/images/home/slide1.jpg",
-    title: "Des fournisseurs vérifiés, à la source",
-    text: "Nous identifions les producteurs, contrôlons leur existence et leurs capacités avant que vous ne vous engagiez.",
     href: "#",
     panelClassName: "bg-muted",
     imageFirst: true,
   },
   {
     image: "/images/home/slide2.jpg",
-    title: "De la récolte à votre entrepôt",
-    text: "Négociation, contrôle qualité et suivi logistique : nous pilotons chaque étape jusqu'à la livraison.",
     href: "#",
     panelClassName: "bg-amber-100",
     imageFirst: false,
   },
 ];
 
-export const HomeSlider = () => {
+export const HomeSlider = ({
+  content,
+}: {
+  content: Dictionary["home"]["slider"];
+}) => {
+  const slides = slideStyles.map((style, index) => ({
+    ...style,
+    ...content.slides[index],
+  }));
   const [current, setCurrent] = useState(0);
   const isFirst = current === 0;
   const isLast = current === slides.length - 1;
@@ -34,7 +41,7 @@ export const HomeSlider = () => {
   return (
     <section
       aria-roledescription="carousel"
-      aria-label="Nos services"
+      aria-label={content.label}
       className="mx-auto flex max-w-(--breakpoint-2xl) items-center gap-4 px-4 py-12 sm:px-6 lg:px-8"
     >
       <Button
@@ -43,7 +50,7 @@ export const HomeSlider = () => {
         className="hidden rounded-full md:inline-flex"
         onClick={() => setCurrent(current - 1)}
         disabled={isFirst}
-        aria-label="Diapositive précédente"
+        aria-label={content.previous}
       >
         <ChevronLeft />
       </Button>
@@ -59,7 +66,10 @@ export const HomeSlider = () => {
                 key={slide.image}
                 role="group"
                 aria-roledescription="slide"
-                aria-label={`${index + 1} sur ${slides.length}`}
+                aria-label={format(content.position, {
+                  n: index + 1,
+                  total: slides.length,
+                })}
                 aria-hidden={index !== current}
                 inert={index !== current}
                 className="grid w-full shrink-0 md:h-[420px] md:grid-cols-[3fr_2fr]"
@@ -92,7 +102,7 @@ export const HomeSlider = () => {
                     href={slide.href}
                     className="mt-4 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-black"
                   >
-                    En savoir plus
+                    {content.learnMore}
                     <span className="flex size-6 items-center justify-center rounded-full bg-white">
                       <ChevronRight className="size-4" />
                     </span>
@@ -109,7 +119,7 @@ export const HomeSlider = () => {
               key={slide.image}
               type="button"
               onClick={() => setCurrent(index)}
-              aria-label={`Aller à la diapositive ${index + 1}`}
+              aria-label={format(content.goTo, { n: index + 1 })}
               aria-current={index === current}
               className={cn(
                 "size-2.5 rounded-full transition-colors",
@@ -126,7 +136,7 @@ export const HomeSlider = () => {
         className="hidden rounded-full md:inline-flex"
         onClick={() => setCurrent(current + 1)}
         disabled={isLast}
-        aria-label="Diapositive suivante"
+        aria-label={content.next}
       >
         <ChevronRight />
       </Button>

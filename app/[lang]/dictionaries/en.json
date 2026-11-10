@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "Solissia",
+    "description": "Solissia, the fruit and vegetable sourcing specialist: we find, negotiate and secure your international purchases and sales."
+  },
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "signIn": "Sign in",
+    "getStarted": "Get started",
+    "menuTitle": "Navigation menu",
+    "logoLabel": "Solissia - Home",
+    "languageLabel": "Language"
+  },
+  "home": {
+    "hero": "solissia is the fruit and vegetable sourcing specialist",
+    "intro": {
+      "lead": "Solissia finds, negotiates and secures your international purchases and sales.",
+      "paragraphs": [
+        "Buying and selling abroad means juggling the unknown: finding a reliable supplier or customer, confirming they actually exist and checking that the business opportunity is real.",
+        "Solissia takes care of all of this. We manage these steps for you, while you keep the final say at every key stage."
+      ]
+    },
+    "slider": {
+      "label": "Our services",
+      "previous": "Previous slide",
+      "next": "Next slide",
+      "goTo": "Go to slide {n}",
+      "position": "{n} of {total}",
+      "learnMore": "Learn more",
+      "slides": [
+        {
+          "title": "Verified suppliers, at the source",
+          "text": "We identify growers and check that they exist and have the capacity you need before you commit."
+        },
+        {
+          "title": "From harvest to your warehouse",
+          "text": "Negotiation, quality control and logistics tracking: we manage every step through to delivery."
+        }
+      ]
+    },
+    "sourcing": {
+      "title": "Solissia, sourcing experts",
+      "paragraphs": [
+        "Our Purchasing and Quality teams join forces to select outstanding partners. Our goal: to guarantee flawless harvests while meeting strict environmental and social responsibility standards.",
+        "To find the best fruit, we search the whole world. When the ingredients our formulations need don't grow in France, Solissia sources them where climate and growing conditions are ideal, while supporting the local economy."
+      ]
+    },
+    "custom": {
+      "title": "Tailored solutions",
+      "paragraphs": [
+        "Rigorous selection of our supplies is the cornerstone of our model. We constantly seek out the finest raw materials to guarantee you flawless quality. By being uncompromising about where our products come from, we supply exceptional ingredients that live up to your own standards."
+      ]
+    }
+  },
+  "footer": {
+    "about": "About",
+    "contact": "Contact",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy",
+    "copyright": "Copyright © {year} Solissia. All rights reserved."
+  }
+}

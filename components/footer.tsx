@@ -1,33 +1,27 @@
 import { cacheLife } from "next/cache";
 import Link from "next/link";
+import { getDictionary, getLocale } from "@/app/[lang]/dictionaries";
 import { Logo } from "@/components/logo";
+import { format } from "@/lib/i18n";
 
 const links = [
-  {
-    title: "À propos",
-    href: "/#about",
-  },
-  {
-    title: "Contact",
-    href: "/#contact",
-  },
-  {
-    title: "Mentions légales",
-    href: "/#mentions-legales",
-  },
-  {
-    title: "Politique de confidentialité",
-    href: "/#confidentialite",
-  },
-];
+  { key: "about", href: "#about" },
+  { key: "contact", href: "#contact" },
+  { key: "legal", href: "#mentions-legales" },
+  { key: "privacy", href: "#confidentialite" },
+] as const;
 
-const CurrentYear = async () => {
+const getCurrentYear = async () => {
   "use cache";
   cacheLife("days");
   return new Date().getFullYear();
 };
 
-const Footer = () => {
+const Footer = async () => {
+  const locale = await getLocale();
+  const { footer } = await getDictionary();
+  const year = await getCurrentYear();
+
   return (
     <footer className="border-t bg-background">
       <div className="mx-auto w-full max-w-(--breakpoint-2xl) divide-y px-4 py-2 sm:px-6 lg:px-8">
@@ -35,17 +29,16 @@ const Footer = () => {
           <Logo />
 
           <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-medium text-sm">
-            {links.map(({ title, href }) => (
-              <li key={title}>
-                <Link href={href}>{title}</Link>
+            {links.map(({ key, href }) => (
+              <li key={key}>
+                <Link href={`/${locale}${href}`}>{footer[key]}</Link>
               </li>
             ))}
           </ul>
         </div>
         <div className="flex items-center justify-center pt-4 pb-2 sm:justify-start">
           <p className="font-medium text-muted-foreground text-sm">
-            Copyright &copy; <CurrentYear /> Solissia. Tous droits
-            réservés.
+            {format(footer.copyright, { year })}
           </p>
         </div>
       </div>

@@ -7,20 +7,23 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { getDictionary } from "@/app/[lang]/dictionaries";
 import { Logo } from "@/components/logo";
 import { NavMenu } from "@/components/nav-menu";
 
-export const NavigationSheet = () => {
+export const NavigationSheet = async () => {
+  const { nav } = await getDictionary();
+
   return (
     <Sheet>
       <VisuallyHidden>
-        <SheetTitle>Navigation Menu</SheetTitle>
+        <SheetTitle>{nav.menuTitle}</SheetTitle>
       </VisuallyHidden>
 
-      <SheetTrigger render={<Button size="icon" variant="outline" />}><Menu /></SheetTrigger>
+      <SheetTrigger render={<Button size="icon" variant="outline" className="text-foreground" />}><Menu /></SheetTrigger>
       <SheetContent className="px-6 py-3">
         <Logo />
-        <NavMenu className="mt-6 [&>div]:h-full" orientation="vertical" />
+        <NavMenu labels={nav} className="mt-6 [&>div]:h-full" orientation="vertical" />
       </SheetContent>
     </Sheet>
   );

@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "Solissia",
+    "description": "Solissia, le spécialiste du sourcing fruits et légumes : nous recherchons, négocions et sécurisons vos achats et vos ventes à l'international."
+  },
+  "nav": {
+    "home": "Accueil",
+    "blog": "Blog",
+    "about": "À propos",
+    "contact": "Contact",
+    "signIn": "Se connecter",
+    "getStarted": "Commencer",
+    "menuTitle": "Menu de navigation",
+    "logoLabel": "Solissia - Accueil",
+    "languageLabel": "Langue"
+  },
+  "home": {
+    "hero": "solissia est le spécialiste du sourcing fruits et légumes",
+    "intro": {
+      "lead": "Solissia recherche, négocie et sécurise vos achats et vos ventes à l'international.",
+      "paragraphs": [
+        "Acheter et vendre à l'étranger, c'est jongler avec l'inconnu : identifier un fournisseur ou un client fiable, valider son existence et vérifier si l'opportunité business est réelle.",
+        "Solissia prend ces démarches en charge. Nous pilotons ces étapes pour vous, tandis que vous conservez le pouvoir de décision à chaque étape clé."
+      ]
+    },
+    "slider": {
+      "label": "Nos services",
+      "previous": "Diapositive précédente",
+      "next": "Diapositive suivante",
+      "goTo": "Aller à la diapositive {n}",
+      "position": "{n} sur {total}",
+      "learnMore": "En savoir plus",
+      "slides": [
+        {
+          "title": "Des fournisseurs vérifiés, à la source",
+          "text": "Nous identifions les producteurs, contrôlons leur existence et leurs capacités avant que vous ne vous engagiez."
+        },
+        {
+          "title": "De la récolte à votre entrepôt",
+          "text": "Négociation, contrôle qualité et suivi logistique : nous pilotons chaque étape jusqu'à la livraison."
+        }
+      ]
+    },
+    "sourcing": {
+      "title": "Solissia est expert en sourcing",
+      "paragraphs": [
+        "Nos équipes Achat et Qualité unissent leurs forces pour sélectionner des partenaires d'excellence. Notre objectif : garantir des récoltes irréprochables tout en respectant des critères stricts de responsabilité environnementale et sociale.",
+        "Pour dénicher les meilleurs fruits, nous explorons le monde entier. Lorsque les ingrédients nécessaires à nos formulations ne poussent pas en France, Solissia s'approvisionne là où les conditions climatiques et culturales sont optimales, tout en soutenant l'économie locale."
+      ]
+    },
+    "custom": {
+      "title": "Des solutions sur-mesure",
+      "paragraphs": [
+        "La sélection rigoureuse de nos approvisionnements est le pilier de notre modèle. Nous recherchons sans relâche les meilleures matières premières pour vous garantir une qualité irréprochable. En étant intransigeants sur l'origine de nos produits, nous vous fournissons des ingrédients d'exception, à la hauteur de vos propres exigences."
+      ]
+    }
+  },
+  "footer": {
+    "about": "À propos",
+    "contact": "Contact",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "copyright": "Copyright © {year} Solissia. Tous droits réservés."
+  }
+}
