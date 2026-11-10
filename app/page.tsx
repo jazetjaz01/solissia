@@ -89,9 +89,7 @@ export default function Home() {
           <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-amber-300" />
           <div className="mt-8 space-y-4 text-lg leading-relaxed text-black/80">
             <p>
-              Experts en fruits et légumes frais, nous garantissons des
-              solutions sur-mesure à nos clients, distributeurs, grossistes et
-              importateurs.Quelque soit les quantités et la destination, nous oeuvrons pour trouver la solution la plus efficace aux besoins de nos clients.
+              ELa sélection rigoureuse de nos approvisionnements est le pilier de notre modèle. Nous recherchons sans relâche les meilleures matières premières pour vous garantir une qualité irréprochable. En étant intransigeants sur l'origine de nos produits, nous vous fournissons des ingrédients d'exception, à la hauteur de vos propres exigences.
             </p>
           </div>
         </div>
