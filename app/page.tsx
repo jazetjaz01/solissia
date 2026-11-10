@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex-1">
       <section className="relative h-[60vh]">
         <Image
-          src="/images/home/home1.jpg"
+          src="/images/home/sourcing1.jpg"
           alt=""
           fill
           priority
