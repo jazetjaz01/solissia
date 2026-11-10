@@ -21,11 +21,11 @@ export default function Home() {
         </div>
       </section>
       <section className="mx-auto max-w-(--breakpoint-2xl) px-4 py-12 sm:px-6 lg:px-8">
-        <p className="mx-auto max-w-3xl text-center text-xl leading-relaxed text-black sm:text-4xl font-semibold ">
+        <p className="mx-auto max-w-5xl text-center text-xl leading-relaxed text-black sm:text-4xl font-semibold ">
           Solissia recherche, négocie et sécurise vos achats et vos ventes à
           l&apos;international.
         </p>
-        <div className="mx-auto mt-8 max-w-3xl space-y-4 text-center text-lg leading-relaxed text-muted-foreground">
+        <div className="mx-auto mt-8 max-w-4xl space-y-4 text-center text-lg leading-relaxed text-muted-foreground">
           <p>
             Acheter et vendre à l&apos;étranger, c&apos;est jongler avec
             l&apos;inconnu : identifier un fournisseur ou un client fiable,
