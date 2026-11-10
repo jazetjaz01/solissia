@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </section>
       <HomeSlider />
-      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[3fr_2fr] lg:gap-16 lg:px-8">
+      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[3fr_2fr] md:px-[calc(1.5rem+3.25rem)] lg:gap-16 lg:px-[calc(2rem+3.25rem)]">
         <div className="relative h-64 sm:h-80 md:h-[480px]">
           <Image
             src="/images/home/sourcing1.jpg"
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[2fr_3fr] lg:gap-16 lg:px-8">
+      <section className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-[2fr_3fr] md:px-[calc(1.5rem+3.25rem)] lg:gap-16 lg:px-[calc(2rem+3.25rem)]">
         <div className="relative h-64 sm:h-80 md:order-last md:h-[480px]">
           <Image
             src="/images/home/sourcing2.jpg"
