@@ -143,7 +143,8 @@
     "messagePlaceholder": "Veuillez saisir votre message.",
     "consent": {
       "title": "J'accepte les termes et conditions",
-      "label": "J'accepte que les informations saisies soient utilisées pour répondre à ma demande."
+      "label": "J'accepte que les informations saisies soient utilisées pour répondre à ma demande.",
+      "privacyLink": "Lire la politique de confidentialité"
     },
     "submit": "Envoyer",
     "sending": "Envoi…",
@@ -235,6 +236,121 @@
           {
             "lines": [
               "Les présentes conditions sont régies par le droit français. Tout litige relatif à l'utilisation du site sera de la compétence exclusive des tribunaux français."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "metadata": {
+      "title": "Politique de confidentialité – Solissia",
+      "description": "Comment Solissia collecte, utilise et protège vos données personnelles."
+    },
+    "breadcrumbHome": "Accueil",
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : 11 novembre 2026",
+    "sections": [
+      {
+        "title": "1 – Responsable du traitement",
+        "blocks": [
+          {
+            "lines": [
+              "Les données personnelles collectées sur le site www.solissia.com sont traitées par Merci Immobilier (ci-après « Solissia »), immatriculée au RCS de Perpignan sous le numéro SIREN 852 226 620, dont le siège social est situé 7 avenue de Banyuls-sur-Mer, 66100 Perpignan.",
+              "Pour toute question relative à vos données : alami@solissia.com."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "2 – Données collectées et finalités",
+        "blocks": [
+          {
+            "lines": [
+              "Nous ne collectons que les données nécessaires aux services que vous utilisez sur le site."
+            ]
+          },
+          {
+            "heading": "Formulaire de contact",
+            "lines": [
+              "Objet de la demande, prénom, nom, adresse e-mail, téléphone (facultatif) et message, afin de répondre à votre demande. Base légale : notre intérêt légitime à traiter les demandes qui nous sont adressées et, le cas échéant, les mesures précontractuelles prises à votre demande."
+            ]
+          },
+          {
+            "heading": "Compte utilisateur",
+            "lines": [
+              "Adresse e-mail et mot de passe (conservé sous forme chiffrée par notre prestataire d'authentification), afin de vous donner accès à votre espace. Base légale : l'exécution du service que vous demandez en créant un compte."
+            ]
+          },
+          {
+            "heading": "Données techniques",
+            "lines": [
+              "Lors de votre visite, des données techniques (adresse IP, type de navigateur, pages consultées) sont traitées par notre hébergeur pour assurer le fonctionnement et la sécurité du site. Base légale : notre intérêt légitime à fournir un site fiable et sécurisé."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3 – Destinataires et prestataires",
+        "blocks": [
+          {
+            "lines": [
+              "Vos données sont destinées aux seules personnes de Solissia chargées de traiter votre demande. Elles ne sont ni vendues ni louées. Nous faisons appel aux prestataires techniques suivants, qui les traitent pour notre compte :"
+            ],
+            "items": [
+              "Vercel Inc. (États-Unis) : hébergement du site.",
+              "Supabase Inc. : base de données et authentification des comptes utilisateurs.",
+              "Resend (États-Unis) : envoi des e-mails de notification lors d'un message envoyé via le formulaire de contact."
+            ],
+            "after": [
+              "Lorsque des données sont transférées hors de l'Union européenne, ces transferts sont encadrés par des garanties appropriées, notamment les clauses contractuelles types de la Commission européenne."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4 – Durées de conservation",
+        "blocks": [
+          {
+            "items": [
+              "Messages de contact : 3 ans à compter de notre dernier échange.",
+              "Compte utilisateur : tant que le compte est actif ; les données sont supprimées à la clôture du compte.",
+              "Données techniques : selon les durées de conservation des journaux de notre hébergeur."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5 – Cookies",
+        "blocks": [
+          {
+            "lines": [
+              "Le site n'utilise aucun cookie de mesure d'audience ni cookie publicitaire.",
+              "Seuls des cookies strictement nécessaires sont déposés : un cookie qui mémorise la langue que vous avez choisie, et, lorsque vous vous connectez à votre compte, des cookies qui conservent votre session de connexion. Ils ne servent à rien d'autre. Conformément à la réglementation, ces cookies sont exemptés de consentement. Les cookies de session sont supprimés lorsque vous vous déconnectez ou à leur expiration.",
+              "Vous pouvez à tout moment configurer votre navigateur pour bloquer les cookies ; la connexion à votre compte ne sera alors plus possible."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "6 – Vos droits",
+        "blocks": [
+          {
+            "lines": [
+              "Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants sur vos données : accès, rectification, effacement, limitation du traitement, opposition, portabilité, ainsi que le droit de retirer votre consentement à tout moment et de définir des directives relatives au sort de vos données après votre décès.",
+              "Pour exercer ces droits, écrivez-nous à alami@solissia.com ou par courrier au 7 avenue de Banyuls-sur-Mer, 66100 Perpignan. Nous vous répondrons dans un délai d'un mois.",
+              "Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "7 – Sécurité",
+        "blocks": [
+          {
+            "lines": [
+              "Nous mettons en œuvre des mesures techniques et organisationnelles adaptées pour protéger vos données : connexions chiffrées (HTTPS), accès restreints aux seules personnes habilitées.",
+              "Pour en savoir plus sur l'éditeur du site, consultez nos [mentions légales](/legal)."
             ]
           }
         ]

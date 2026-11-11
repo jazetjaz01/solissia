@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 import { startTransition, useActionState, type ReactNode } from "react";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { sendContactMessage } from "@/app/[lang]/contact/actions";
@@ -175,6 +176,15 @@ export const ContactForm = ({
           />
           {t.consent.label}
         </label>
+        <p className="pl-8 text-sm text-black/60">
+          <Link
+            href={`/${lang}/privacy`}
+            target="_blank"
+            className="underline underline-offset-4 decoration-black/30 hover:decoration-black"
+          >
+            {t.consent.privacyLink}
+          </Link>
+        </p>
       </fieldset>
 
       {state?.error && (

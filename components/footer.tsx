@@ -8,7 +8,7 @@ const links = [
   { key: "about", href: "#about" },
   { key: "contact", href: "/contact" },
   { key: "legal", href: "/legal" },
-  { key: "privacy", href: "#confidentialite" },
+  { key: "privacy", href: "/privacy" },
 ] as const;
 
 const getCurrentYear = async () => {

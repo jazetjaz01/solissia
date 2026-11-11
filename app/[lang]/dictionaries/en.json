@@ -143,7 +143,8 @@
     "messagePlaceholder": "Please enter your message.",
     "consent": {
       "title": "I accept the terms and conditions",
-      "label": "I agree that the information I enter may be used to answer my request."
+      "label": "I agree that the information I enter may be used to answer my request.",
+      "privacyLink": "Read the privacy policy"
     },
     "submit": "Send",
     "sending": "Sending…",
@@ -235,6 +236,121 @@
           {
             "lines": [
               "These terms are governed by French law. Any dispute relating to the use of the website shall fall under the exclusive jurisdiction of the French courts. The French version of this notice prevails."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "metadata": {
+      "title": "Privacy policy – Solissia",
+      "description": "How Solissia collects, uses and protects your personal data."
+    },
+    "breadcrumbHome": "Home",
+    "title": "Privacy policy",
+    "updated": "Last updated: November 11, 2026",
+    "sections": [
+      {
+        "title": "1 – Data controller",
+        "blocks": [
+          {
+            "lines": [
+              "Personal data collected on the website www.solissia.com is processed by Merci Immobilier (hereinafter “Solissia”), registered with the Perpignan Trade and Companies Register (RCS) under SIREN number 852 226 620, with its registered office at 7 avenue de Banyuls-sur-Mer, 66100 Perpignan, France.",
+              "For any question about your data: alami@solissia.com."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "2 – Data collected and purposes",
+        "blocks": [
+          {
+            "lines": [
+              "We only collect the data needed for the services you use on the website."
+            ]
+          },
+          {
+            "heading": "Contact form",
+            "lines": [
+              "Subject, first name, last name, email address, phone number (optional) and message, in order to answer your request. Legal basis: our legitimate interest in handling the requests sent to us and, where applicable, pre-contractual measures taken at your request."
+            ]
+          },
+          {
+            "heading": "User account",
+            "lines": [
+              "Email address and password (stored in encrypted form by our authentication provider), in order to give you access to your account. Legal basis: performance of the service you request by creating an account."
+            ]
+          },
+          {
+            "heading": "Technical data",
+            "lines": [
+              "When you visit, technical data (IP address, browser type, pages viewed) is processed by our hosting provider to run and secure the website. Legal basis: our legitimate interest in providing a reliable and secure website."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3 – Recipients and service providers",
+        "blocks": [
+          {
+            "lines": [
+              "Your data is intended only for the Solissia staff in charge of handling your request. It is never sold or rented. We use the following technical providers, which process it on our behalf:"
+            ],
+            "items": [
+              "Vercel Inc. (United States): website hosting.",
+              "Supabase Inc.: database and user account authentication.",
+              "Resend (United States): sending notification emails when a message is sent through the contact form."
+            ],
+            "after": [
+              "When data is transferred outside the European Union, these transfers are covered by appropriate safeguards, in particular the European Commission's standard contractual clauses."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "4 – Retention periods",
+        "blocks": [
+          {
+            "items": [
+              "Contact messages: 3 years from our last exchange.",
+              "User account: as long as the account is active; the data is deleted when the account is closed.",
+              "Technical data: according to our hosting provider's log retention periods."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "5 – Cookies",
+        "blocks": [
+          {
+            "lines": [
+              "The website uses no audience measurement or advertising cookies.",
+              "Only strictly necessary cookies are set: one that remembers the language you chose and, when you sign in to your account, cookies that keep you signed in. They serve no other purpose. Under the applicable rules, these cookies do not require consent. Session cookies are deleted when you sign out or when they expire.",
+              "You can set your browser to block cookies at any time; you will then no longer be able to sign in to your account."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "6 – Your rights",
+        "blocks": [
+          {
+            "lines": [
+              "Under the General Data Protection Regulation (GDPR) and the French Data Protection Act, you have the following rights over your data: access, rectification, erasure, restriction of processing, objection, portability, as well as the right to withdraw your consent at any time and to set instructions regarding your data after your death.",
+              "To exercise these rights, write to us at alami@solissia.com or by post at 7 avenue de Banyuls-sur-Mer, 66100 Perpignan, France. We will reply within one month.",
+              "If you believe your rights are not being respected, you can lodge a complaint with the CNIL, the French data protection authority (www.cnil.fr)."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "7 – Security",
+        "blocks": [
+          {
+            "lines": [
+              "We implement appropriate technical and organisational measures to protect your data: encrypted connections (HTTPS) and access restricted to authorised staff only.",
+              "To learn more about the website publisher, see our [legal notice](/legal). The French version of this policy prevails."
             ]
           }
         ]
