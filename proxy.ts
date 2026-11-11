@@ -1,5 +1,9 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { defaultLocale, hasLocale, localeCookie, locales } from "@/lib/i18n";
+import { redirectWithSession, updateSession } from "@/lib/supabase/proxy";
+
+// Pages reserved to signed-in users, after the language (/fr/account).
+const protectedPaths = ["/account", "/update-password"];
 
 // Language chosen with the flags first, then the browser's preferred languages.
 function getLocale(request: NextRequest) {
@@ -18,16 +22,31 @@ function getLocale(request: NextRequest) {
   return preferred && hasLocale(preferred.lang) ? preferred.lang : defaultLocale;
 }
 
-export function proxy(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const pathnameHasLocale = locales.some(
+  const locale = locales.find(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
-  if (pathnameHasLocale) return;
+  if (!locale) {
+    request.nextUrl.pathname = `/${getLocale(request)}${pathname}`;
+    return NextResponse.redirect(request.nextUrl);
+  }
 
-  request.nextUrl.pathname = `/${getLocale(request)}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  const { response, claims } = await updateSession(request);
+
+  const path = pathname.slice(locale.length + 1);
+  const isProtected = protectedPaths.some(
+    (protectedPath) => path === protectedPath || path.startsWith(`${protectedPath}/`),
+  );
+  if (isProtected && !claims) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${locale}/login`;
+    url.search = "";
+    return redirectWithSession(url, response);
+  }
+
+  return response;
 }
 
 export const config = {

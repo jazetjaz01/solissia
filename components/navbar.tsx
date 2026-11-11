@@ -1,5 +1,6 @@
 import { getDictionary, getLocale } from "@/app/[lang]/dictionaries";
-import { Button } from "@/components/ui/button";
+import { Suspense } from "react";
+import { AuthButtons } from "@/components/auth-buttons";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { Logo } from "@/components/logo";
 import { NavMenu } from "@/components/nav-menu";
@@ -21,10 +22,9 @@ const Navbar = async () => {
 
           <div className="flex items-center gap-3">
             <LanguageSwitcher current={locale} label={nav.languageLabel} />
-            <Button className="hidden text-foreground sm:inline-flex" variant="outline">
-              {nav.signIn}
-            </Button>
-            <Button>{nav.getStarted}</Button>
+            <Suspense>
+              <AuthButtons />
+            </Suspense>
 
             {/* Mobile Menu */}
             <div className="md:hidden">

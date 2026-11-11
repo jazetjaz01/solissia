@@ -9,10 +9,11 @@
     "about": "À propos",
     "contact": "Contact",
     "signIn": "Se connecter",
-    "getStarted": "Commencer",
     "menuTitle": "Menu de navigation",
     "logoLabel": "Solissia - Accueil",
-    "languageLabel": "Langue"
+    "languageLabel": "Langue",
+    "account": "Mon compte",
+    "signUp": "Créer un compte"
   },
   "home": {
     "hero": "solissia est le spécialiste du sourcing fruits et légumes",
@@ -61,5 +62,57 @@
     "legal": "Mentions légales",
     "privacy": "Politique de confidentialité",
     "copyright": "Copyright © {year} Solissia. Tous droits réservés."
+  },
+  "auth": {
+    "email": "Adresse email",
+    "password": "Mot de passe",
+    "newPassword": "Nouveau mot de passe",
+    "login": {
+      "title": "Connexion",
+      "submit": "Se connecter",
+      "forgot": "Mot de passe oublié ?",
+      "noAccount": "Pas encore de compte ?",
+      "signupLink": "Créer un compte"
+    },
+    "signup": {
+      "title": "Créer un compte",
+      "submit": "Créer mon compte",
+      "passwordHint": "8 caractères minimum.",
+      "hasAccount": "Déjà un compte ?",
+      "loginLink": "Se connecter",
+      "success": "Compte créé. Un email de confirmation vous a été envoyé : cliquez sur le lien qu'il contient pour activer votre compte."
+    },
+    "forgot": {
+      "title": "Mot de passe oublié",
+      "intro": "Saisissez votre adresse email : vous recevrez un lien pour choisir un nouveau mot de passe.",
+      "submit": "Envoyer le lien",
+      "success": "Si un compte existe pour cette adresse, un email avec un lien de réinitialisation vient d'être envoyé.",
+      "backToLogin": "Retour à la connexion"
+    },
+    "update": {
+      "title": "Nouveau mot de passe",
+      "submit": "Enregistrer",
+      "success": "Votre mot de passe a été modifié."
+    },
+    "account": {
+      "title": "Mon compte",
+      "signedInAs": "Connecté avec",
+      "logout": "Se déconnecter",
+      "changePassword": "Changer de mot de passe"
+    },
+    "confirmError": {
+      "title": "Lien invalide ou expiré",
+      "text": "Ce lien de confirmation ne fonctionne plus. Il a peut-être déjà été utilisé, ou il a été ouvert dans un autre navigateur que celui de l'inscription.",
+      "backToLogin": "Retour à la connexion"
+    },
+    "errors": {
+      "invalid_credentials": "Email ou mot de passe incorrect.",
+      "email_not_confirmed": "Votre adresse email n'est pas encore confirmée. Cliquez sur le lien reçu par email.",
+      "weak_password": "Ce mot de passe est trop faible. Choisissez-en un plus long ou plus complexe.",
+      "same_password": "Le nouveau mot de passe doit être différent de l'ancien.",
+      "over_email_send_rate_limit": "Trop d'emails envoyés. Réessayez dans quelques minutes.",
+      "missing_fields": "Merci de remplir tous les champs.",
+      "generic": "Une erreur est survenue. Réessayez dans un instant."
+    }
   }
 }

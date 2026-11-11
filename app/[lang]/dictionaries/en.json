@@ -9,10 +9,11 @@
     "about": "About",
     "contact": "Contact",
     "signIn": "Sign in",
-    "getStarted": "Get started",
     "menuTitle": "Navigation menu",
     "logoLabel": "Solissia - Home",
-    "languageLabel": "Language"
+    "languageLabel": "Language",
+    "account": "My account",
+    "signUp": "Create an account"
   },
   "home": {
     "hero": "solissia is the fruit and vegetable sourcing specialist",
@@ -61,5 +62,57 @@
     "legal": "Legal notice",
     "privacy": "Privacy policy",
     "copyright": "Copyright © {year} Solissia. All rights reserved."
+  },
+  "auth": {
+    "email": "Email address",
+    "password": "Password",
+    "newPassword": "New password",
+    "login": {
+      "title": "Sign in",
+      "submit": "Sign in",
+      "forgot": "Forgot your password?",
+      "noAccount": "Don't have an account?",
+      "signupLink": "Create an account"
+    },
+    "signup": {
+      "title": "Create an account",
+      "submit": "Create my account",
+      "passwordHint": "At least 8 characters.",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign in",
+      "success": "Account created. We've sent you a confirmation email: click the link inside to activate your account."
+    },
+    "forgot": {
+      "title": "Forgot your password",
+      "intro": "Enter your email address and we'll send you a link to choose a new password.",
+      "submit": "Send the link",
+      "success": "If an account exists for this address, we've just sent an email with a reset link.",
+      "backToLogin": "Back to sign in"
+    },
+    "update": {
+      "title": "New password",
+      "submit": "Save",
+      "success": "Your password has been changed."
+    },
+    "account": {
+      "title": "My account",
+      "signedInAs": "Signed in as",
+      "logout": "Sign out",
+      "changePassword": "Change password"
+    },
+    "confirmError": {
+      "title": "Invalid or expired link",
+      "text": "This confirmation link no longer works. It may have been used already, or opened in a different browser from the one you signed up with.",
+      "backToLogin": "Back to sign in"
+    },
+    "errors": {
+      "invalid_credentials": "Incorrect email or password.",
+      "email_not_confirmed": "Your email address isn't confirmed yet. Click the link we sent you by email.",
+      "weak_password": "This password is too weak. Choose a longer or more complex one.",
+      "same_password": "Your new password must be different from the old one.",
+      "over_email_send_rate_limit": "Too many emails sent. Try again in a few minutes.",
+      "missing_fields": "Please fill in all the fields.",
+      "generic": "Something went wrong. Please try again in a moment."
+    }
   }
 }
