@@ -17,3 +17,13 @@ export const initials = (name: string) =>
     .slice(0, 2)
     .join("")
     .toUpperCase();
+
+// "Agrumes du Maroc : la saison 2026" → "agrumes-du-maroc-la-saison-2026"
+export const slugify = (value: string) =>
+  value
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);

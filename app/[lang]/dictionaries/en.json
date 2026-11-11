@@ -411,5 +411,83 @@
       "copied": "Link copied",
       "copiedStatus": "Link copied to clipboard"
     }
+  },
+  "writer": {
+    "section": "Author area",
+    "newArticle": "Write an article",
+    "myArticles": "My articles",
+    "authorProfile": "My author profile",
+    "backToAccount": "My account",
+    "backToArticles": "My articles",
+    "editArticle": "Edit article",
+    "loading": "Loading…",
+    "list": {
+      "empty": "You haven't written any articles yet.",
+      "published": "Published on {date}",
+      "draft": "Draft · edited on {date}",
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "confirmDelete": "Permanently delete this article?"
+    },
+    "needAuthor": "Before writing an article, create your author profile: your name and photo are shown on your articles.",
+    "createAuthor": "Create my author profile",
+    "form": {
+      "language": "Article language",
+      "title": "Title",
+      "slug": "Article address",
+      "category": "Category",
+      "noCategory": "None",
+      "cover": "Cover image",
+      "excerpt": "Summary",
+      "excerptHint": "One or two sentences, shown in the article list and in Google.",
+      "content": "Content",
+      "contentHint": "Separate paragraphs with a blank line.",
+      "optional": "optional",
+      "publish": "Publish",
+      "update": "Update",
+      "saveDraft": "Save draft",
+      "unpublish": "Back to draft",
+      "saving": "Saving…"
+    },
+    "image": {
+      "none": "No image",
+      "choose": "Choose an image",
+      "change": "Change image",
+      "remove": "Remove",
+      "uploading": "Uploading…",
+      "badType": "Accepted formats: JPEG, PNG, WebP or AVIF.",
+      "tooBig": "Image too large ({max} MB maximum).",
+      "failed": "The image upload failed. Please try again."
+    },
+    "author": {
+      "intro": "Your name and photo are shown on the articles you publish.",
+      "photo": "Photo",
+      "displayName": "Display name",
+      "jobTitle": "Job title",
+      "jobTitlePlaceholder": "E.g. Founder, fruit and vegetable sourcing",
+      "bio": "Short bio",
+      "links": "Public contact details",
+      "linksHint": "Shown under your name on your articles. The contact email is public and can differ from your account email.",
+      "linkedin": "LinkedIn",
+      "x": "X (Twitter)",
+      "contactEmail": "Contact email",
+      "save": "Save",
+      "saved": "Your author profile has been saved."
+    },
+    "errors": {
+      "title": "The title must be between 3 and 200 characters.",
+      "slug": "The article address is invalid.",
+      "content": "A published article must have content.",
+      "image": "Invalid image.",
+      "needAuthor": "Create your author profile first.",
+      "slugTaken": "Another article in this language already uses this address. Please change it.",
+      "displayName": "The display name must be between 2 and 100 characters.",
+      "jobTitle": "The job title must not exceed 120 characters.",
+      "linkedin": "Invalid LinkedIn link (e.g. https://www.linkedin.com/in/your-profile).",
+      "x": "Invalid X account (e.g. @youraccount or https://x.com/youraccount).",
+      "contactEmail": "Invalid contact email address.",
+      "generic": "Saving failed. Please try again."
+    }
   }
 }

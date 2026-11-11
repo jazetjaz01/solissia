@@ -411,5 +411,83 @@
       "copied": "Lien copié",
       "copiedStatus": "Lien copié dans le presse-papiers"
     }
+  },
+  "writer": {
+    "section": "Espace auteur",
+    "newArticle": "Créer un article",
+    "myArticles": "Mes articles",
+    "authorProfile": "Ma fiche auteur",
+    "backToAccount": "Mon compte",
+    "backToArticles": "Mes articles",
+    "editArticle": "Modifier l'article",
+    "loading": "Chargement…",
+    "list": {
+      "empty": "Vous n'avez encore écrit aucun article.",
+      "published": "Publié le {date}",
+      "draft": "Brouillon · modifié le {date}",
+      "view": "Voir",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "confirmDelete": "Supprimer définitivement cet article ?"
+    },
+    "needAuthor": "Avant d'écrire un article, créez votre fiche auteur : votre nom et votre photo apparaissent sur vos articles.",
+    "createAuthor": "Créer ma fiche auteur",
+    "form": {
+      "language": "Langue de l'article",
+      "title": "Titre",
+      "slug": "Adresse de l'article",
+      "category": "Catégorie",
+      "noCategory": "Aucune",
+      "cover": "Image de couverture",
+      "excerpt": "Résumé",
+      "excerptHint": "Une ou deux phrases, affichées dans la liste des articles et dans Google.",
+      "content": "Contenu",
+      "contentHint": "Séparez les paragraphes par une ligne vide.",
+      "optional": "facultatif",
+      "publish": "Publier",
+      "update": "Mettre à jour",
+      "saveDraft": "Enregistrer le brouillon",
+      "unpublish": "Repasser en brouillon",
+      "saving": "Enregistrement…"
+    },
+    "image": {
+      "none": "Aucune image",
+      "choose": "Choisir une image",
+      "change": "Changer l'image",
+      "remove": "Retirer",
+      "uploading": "Envoi en cours…",
+      "badType": "Formats acceptés : JPEG, PNG, WebP ou AVIF.",
+      "tooBig": "Image trop lourde ({max} Mo maximum).",
+      "failed": "L'envoi de l'image a échoué. Réessayez."
+    },
+    "author": {
+      "intro": "Votre nom et votre photo apparaissent sur les articles que vous publiez.",
+      "photo": "Photo",
+      "displayName": "Nom affiché",
+      "jobTitle": "Fonction",
+      "jobTitlePlaceholder": "Ex. Fondateur, sourcing fruits et légumes",
+      "bio": "Courte présentation",
+      "links": "Coordonnées publiques",
+      "linksHint": "Affichées sous votre nom sur vos articles. L'e-mail de contact est public et peut être différent de celui de votre compte.",
+      "linkedin": "LinkedIn",
+      "x": "X (Twitter)",
+      "contactEmail": "E-mail de contact",
+      "save": "Enregistrer",
+      "saved": "Votre fiche auteur est enregistrée."
+    },
+    "errors": {
+      "title": "Le titre doit contenir entre 3 et 200 caractères.",
+      "slug": "L'adresse de l'article est invalide.",
+      "content": "Un article publié doit avoir un contenu.",
+      "image": "Image invalide.",
+      "needAuthor": "Créez d'abord votre fiche auteur.",
+      "slugTaken": "Un article utilise déjà cette adresse dans cette langue. Modifiez-la.",
+      "displayName": "Le nom affiché doit contenir entre 2 et 100 caractères.",
+      "jobTitle": "La fonction ne doit pas dépasser 120 caractères.",
+      "linkedin": "Lien LinkedIn invalide (ex. https://www.linkedin.com/in/votre-profil).",
+      "x": "Compte X invalide (ex. @votrecompte ou https://x.com/votrecompte).",
+      "contactEmail": "Adresse e-mail de contact invalide.",
+      "generic": "L'enregistrement a échoué. Réessayez."
+    }
   }
 }
