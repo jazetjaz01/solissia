@@ -115,5 +115,50 @@
       "missing_fields": "Please fill in all the fields.",
       "generic": "Something went wrong. Please try again in a moment."
     }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact – Solissia",
+      "description": "Contact Solissia about your international buying and selling projects."
+    },
+    "title": "Contact us",
+    "intro": "Planning to buy or sell internationally? Tell us what you need and we'll get back to you shortly.",
+    "subject": {
+      "label": "Subject",
+      "placeholder": "Select an option",
+      "options": {
+        "sourcing": "Finding suppliers (sourcing)",
+        "buy": "Buying internationally",
+        "sell": "Selling internationally",
+        "partnership": "Partnership",
+        "other": "Other request"
+      }
+    },
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "optional": "optional",
+    "message": "Your message",
+    "messagePlaceholder": "Please enter your message.",
+    "consent": {
+      "title": "I accept the terms and conditions",
+      "label": "I agree that the information I enter may be used to answer my request."
+    },
+    "submit": "Send",
+    "sending": "Sending…",
+    "success": "Thank you, your message has been sent. We'll get back to you shortly.",
+    "info": {
+      "address": "Address",
+      "phone": "By phone",
+      "email": "By email",
+      "map": "View on map"
+    },
+    "errors": {
+      "missing_fields": "Please fill in all required fields.",
+      "invalid_email": "Please enter a valid email address.",
+      "consent": "Please accept the terms to send your message.",
+      "generic": "Sending failed. Please try again later or email us directly."
+    }
   }
 }

@@ -18,7 +18,7 @@ const Navbar = async () => {
           <Logo />
 
           {/* Desktop Menu */}
-          <NavMenu labels={nav} className="hidden md:block group-data-[transparent=true]/navbar:[&_a:hover]:bg-white/15 group-data-[transparent=true]/navbar:[&_a:focus]:bg-white/15" />
+          <NavMenu labels={nav} locale={locale} className="hidden md:block group-data-[transparent=true]/navbar:[&_a:hover]:bg-white/15 group-data-[transparent=true]/navbar:[&_a:focus]:bg-white/15" />
 
           <div className="flex items-center gap-3">
             <LanguageSwitcher current={locale} label={nav.languageLabel} />

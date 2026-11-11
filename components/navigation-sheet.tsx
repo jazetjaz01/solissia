@@ -7,11 +7,12 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { getDictionary } from "@/app/[lang]/dictionaries";
+import { getDictionary, getLocale } from "@/app/[lang]/dictionaries";
 import { Logo } from "@/components/logo";
 import { NavMenu } from "@/components/nav-menu";
 
 export const NavigationSheet = async () => {
+  const locale = await getLocale();
   const { nav } = await getDictionary();
 
   return (
@@ -23,7 +24,7 @@ export const NavigationSheet = async () => {
       <SheetTrigger render={<Button size="icon" variant="outline" className="text-foreground" />}><Menu /></SheetTrigger>
       <SheetContent className="px-6 py-3">
         <Logo />
-        <NavMenu labels={nav} className="mt-6 [&>div]:h-full" orientation="vertical" />
+        <NavMenu labels={nav} locale={locale} className="mt-6 [&>div]:h-full" orientation="vertical" />
       </SheetContent>
     </Sheet>
   );

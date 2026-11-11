@@ -115,5 +115,50 @@
       "missing_fields": "Merci de remplir tous les champs.",
       "generic": "Une erreur est survenue. Réessayez dans un instant."
     }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact – Solissia",
+      "description": "Contactez Solissia pour vos projets d'achat et de vente à l'international."
+    },
+    "title": "Contactez-nous",
+    "intro": "Un projet d'achat ou de vente à l'international ? Décrivez-nous votre besoin, nous revenons vers vous rapidement.",
+    "subject": {
+      "label": "Objet de la demande",
+      "placeholder": "Sélectionnez votre option",
+      "options": {
+        "sourcing": "Recherche de fournisseurs (sourcing)",
+        "buy": "Achat à l'international",
+        "sell": "Vente à l'international",
+        "partnership": "Partenariat",
+        "other": "Autre demande"
+      }
+    },
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Adresse e-mail",
+    "phone": "Numéro de téléphone",
+    "optional": "facultatif",
+    "message": "Votre message",
+    "messagePlaceholder": "Veuillez saisir votre message.",
+    "consent": {
+      "title": "J'accepte les termes et conditions",
+      "label": "J'accepte que les informations saisies soient utilisées pour répondre à ma demande."
+    },
+    "submit": "Envoyer",
+    "sending": "Envoi…",
+    "success": "Merci, votre message a bien été envoyé. Nous revenons vers vous rapidement.",
+    "info": {
+      "address": "Adresse",
+      "phone": "Par téléphone",
+      "email": "Par e-mail",
+      "map": "Voir sur la carte"
+    },
+    "errors": {
+      "missing_fields": "Veuillez remplir tous les champs obligatoires.",
+      "invalid_email": "Veuillez saisir une adresse e-mail valide.",
+      "consent": "Veuillez accepter les conditions pour envoyer votre message.",
+      "generic": "L'envoi a échoué. Réessayez plus tard ou écrivez-nous directement par e-mail."
+    }
   }
 }

@@ -6,7 +6,7 @@ import { format } from "@/lib/i18n";
 
 const links = [
   { key: "about", href: "#about" },
-  { key: "contact", href: "#contact" },
+  { key: "contact", href: "/contact" },
   { key: "legal", href: "#mentions-legales" },
   { key: "privacy", href: "#confidentialite" },
 ] as const;
