@@ -12,6 +12,7 @@ export type AuthState = { error?: AuthErrorKey; success?: boolean } | null;
 const knownErrors = new Set<string>([
   "invalid_credentials",
   "email_not_confirmed",
+  "user_already_exists",
   "weak_password",
   "same_password",
   "over_email_send_rate_limit",
@@ -55,13 +56,17 @@ export async function signup(_: AuthState, formData: FormData): Promise<AuthStat
   if (!email || !password) return { error: "missing_fields" };
 
   const supabase = await createClient();
-  const { error } = await supabase.auth.signUp({
+  const { data, error } = await supabase.auth.signUp({
     email,
     password,
     options: { emailRedirectTo: await confirmUrl(lang, `/${lang}/account`) },
   });
   if (error) return { error: toErrorKey(error.code) };
 
+  // "Confirm email" is off in Supabase: the account is active and signed in.
+  if (data.session) redirect(`/${lang}/account`);
+
+  // "Confirm email" is on: the user must click the link in the email first.
   return { success: true };
 }
 

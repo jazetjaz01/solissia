@@ -108,6 +108,7 @@
     "errors": {
       "invalid_credentials": "Incorrect email or password.",
       "email_not_confirmed": "Your email address isn't confirmed yet. Click the link we sent you by email.",
+      "user_already_exists": "An account already exists with this email address. Sign in, or use “Forgot your password”.",
       "weak_password": "This password is too weak. Choose a longer or more complex one.",
       "same_password": "Your new password must be different from the old one.",
       "over_email_send_rate_limit": "Too many emails sent. Try again in a few minutes.",
