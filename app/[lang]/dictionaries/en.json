@@ -160,5 +160,85 @@
       "consent": "Please accept the terms to send your message.",
       "generic": "Sending failed. Please try again later or email us directly."
     }
+  },
+  "legal": {
+    "metadata": {
+      "title": "Legal notice – Solissia",
+      "description": "Legal notice and terms of use of the Solissia website."
+    },
+    "breadcrumbHome": "Home",
+    "title": "Legal notice",
+    "sections": [
+      {
+        "title": "1 – Legal notice",
+        "blocks": [
+          {
+            "heading": "Website publisher",
+            "lines": [
+              "The website www.solissia.com is published by:",
+              "Merci Immobilier (hereinafter “Solissia”)",
+              "Registered with the Perpignan Trade and Companies Register (RCS) under SIREN number 852 226 620",
+              "Registered office: 7 avenue de Banyuls-sur-Mer, 66100 Perpignan, France",
+              "Email: alami@solissia.com",
+              "Phone: +33 6 16 22 46 82"
+            ]
+          },
+          {
+            "heading": "Publication director",
+            "lines": [
+              "Alami Er'haidi, founder of Solissia"
+            ]
+          },
+          {
+            "heading": "Hosting provider",
+            "lines": [
+              "Vercel Inc.",
+              "440 N Barranca Ave #4133, Covina, CA 91723, United States",
+              "https://vercel.com"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "2 – Terms of use",
+        "warning": "Notice: please read these terms of use carefully.",
+        "blocks": [
+          {
+            "heading": "Acceptance of the terms",
+            "lines": [
+              "Anyone using our website is deemed to have read and accepted these terms of use. Solissia reserves the right to change them at any time."
+            ]
+          },
+          {
+            "heading": "Website content",
+            "lines": [
+              "The information published on the website, in particular in the Blog section, is provided for general information purposes only. It does not constitute legal, tax or financial advice suited to any particular situation. Solissia strives to publish accurate and up-to-date information but cannot be held liable for any errors, inaccuracies or omissions."
+            ]
+          },
+          {
+            "heading": "Intellectual property",
+            "lines": [
+              "All content on this website (graphics, images, text, logos, icons) is the exclusive property of Solissia. Any reproduction or distribution, even partial, is strictly prohibited without prior written consent, in accordance with Articles L.335-2 et seq. of the French Intellectual Property Code."
+            ]
+          },
+          {
+            "heading": "Availability",
+            "lines": [
+              "The website is normally available 24 hours a day. However, Solissia reserves the right to close the website temporarily, without notice, for maintenance or technical updates."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3 – Disputes",
+        "blocks": [
+          {
+            "lines": [
+              "These terms are governed by French law. Any dispute relating to the use of the website shall fall under the exclusive jurisdiction of the French courts. The French version of this notice prevails."
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

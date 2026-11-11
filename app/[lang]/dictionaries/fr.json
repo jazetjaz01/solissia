@@ -160,5 +160,85 @@
       "consent": "Veuillez accepter les conditions pour envoyer votre message.",
       "generic": "L'envoi a échoué. Réessayez plus tard ou écrivez-nous directement par e-mail."
     }
+  },
+  "legal": {
+    "metadata": {
+      "title": "Mentions légales – Solissia",
+      "description": "Mentions légales et conditions d'utilisation du site Solissia."
+    },
+    "breadcrumbHome": "Accueil",
+    "title": "Mentions légales",
+    "sections": [
+      {
+        "title": "1 – Mentions légales",
+        "blocks": [
+          {
+            "heading": "Éditeur du site",
+            "lines": [
+              "Le site www.solissia.com est édité par :",
+              "Merci Immobilier (ci-après « Solissia »)",
+              "Immatriculée au RCS de Perpignan sous le numéro SIREN 852 226 620",
+              "Siège social : 7 avenue de Banyuls-sur-Mer, 66100 Perpignan",
+              "Email : alami@solissia.com",
+              "Tél. : 06 16 22 46 82"
+            ]
+          },
+          {
+            "heading": "Directeur de la publication",
+            "lines": [
+              "Alami Er'haidi, fondateur de Solissia"
+            ]
+          },
+          {
+            "heading": "Hébergeur",
+            "lines": [
+              "Vercel Inc.",
+              "440 N Barranca Ave #4133, Covina, CA 91723, États-Unis",
+              "https://vercel.com"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "2 – Conditions d'utilisation",
+        "warning": "Avertissement : nous vous invitons à lire avec attention les présentes conditions d'utilisation.",
+        "blocks": [
+          {
+            "heading": "Acceptation des conditions",
+            "lines": [
+              "Tout internaute qui souhaite utiliser notre site internet est réputé avoir pris connaissance des présentes conditions d'utilisation et les avoir acceptées. Solissia se réserve le droit de les modifier à tout moment."
+            ]
+          },
+          {
+            "heading": "Contenus du site",
+            "lines": [
+              "Les informations publiées sur le site, notamment dans la rubrique Blog, sont fournies à titre informatif et général. Elles ne constituent pas un conseil juridique, fiscal ou financier adapté à une situation particulière. Solissia s'efforce de diffuser des informations exactes et à jour, mais ne saurait être tenue pour responsable en cas d'erreurs, d'inexactitudes ou d'omissions."
+            ]
+          },
+          {
+            "heading": "Propriété intellectuelle",
+            "lines": [
+              "Tout le contenu du présent site (graphismes, images, textes, logos, icônes) est la propriété exclusive de Solissia. Toute reproduction ou distribution, même partielle, est strictement interdite sans accord préalable écrit, conformément aux articles L.335-2 et suivants du Code de la propriété intellectuelle."
+            ]
+          },
+          {
+            "heading": "Accessibilité",
+            "lines": [
+              "Le site est normalement accessible 24 h/24. Toutefois, Solissia se réserve le droit, sans préavis, de fermer temporairement le site pour maintenance ou mise à jour technique."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "3 – Litiges",
+        "blocks": [
+          {
+            "lines": [
+              "Les présentes conditions sont régies par le droit français. Tout litige relatif à l'utilisation du site sera de la compétence exclusive des tribunaux français."
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
