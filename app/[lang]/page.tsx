@@ -9,7 +9,7 @@ export default async function Home() {
     <main className="flex-1">
       <section className="relative -mt-16 h-[calc(60vh+4rem)]">
         <Image
-          src="/images/home/home1.jpg"
+          src="/images/home/home2.jpg"
           alt=""
           fill
           priority
