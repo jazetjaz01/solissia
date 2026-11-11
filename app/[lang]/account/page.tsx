@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { noIndex } from "@/lib/seo";
 import Link from "next/link";
 import { Suspense } from "react";
 import { AuthCard } from "@/components/auth-card";
@@ -5,6 +7,12 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { getClaims } from "@/lib/supabase/server";
 import { logout } from "../auth/actions";
 import { getDictionary, getLocale } from "../dictionaries";
+
+// Not useful in search results.
+export async function generateMetadata(): Promise<Metadata> {
+  const { auth } = await getDictionary();
+  return { title: auth.account.title, robots: noIndex };
+}
 
 // Reads the session cookie, so it renders at request time.
 async function AccountDetails() {

@@ -1,7 +1,19 @@
 {
   "metadata": {
     "title": "Solissia",
-    "description": "Solissia, the fruit and vegetable sourcing specialist: we find, negotiate and secure your international purchases and sales."
+    "homeTitle": "Solissia – International fresh fruit and vegetable sourcing",
+    "description": "Solissia, the fresh fruit and vegetable sourcing specialist: we find reliable growers, negotiate and secure your international purchases and sales.",
+    "ogImageAlt": "Solissia, fresh fruit and vegetable sourcing",
+    "serviceName": "Fresh fruit and vegetable sourcing",
+    "knowsAbout": [
+      "Fruit and vegetable sourcing",
+      "Fresh produce",
+      "Fruit and vegetable import and export",
+      "Finding growers and suppliers",
+      "International purchase negotiation",
+      "Quality control",
+      "International logistics"
+    ]
   },
   "nav": {
     "home": "Home",
@@ -54,6 +66,11 @@
       "paragraphs": [
         "Rigorous selection of our supplies is the cornerstone of our model. We constantly seek out the finest raw materials to guarantee you flawless quality. By being uncompromising about where our products come from, we supply exceptional ingredients that live up to your own standards."
       ]
+    },
+    "imageAlts": {
+      "hero": "Fresh fruit and vegetables: radish, squash, persimmon, avocado, quince and turnip",
+      "sourcing": "Ripe oranges on an orange tree",
+      "custom": "Fresh lemons, whole and sliced"
     }
   },
   "footer": {
@@ -118,8 +135,8 @@
   },
   "contact": {
     "metadata": {
-      "title": "Contact – Solissia",
-      "description": "Contact Solissia about your international buying and selling projects."
+      "title": "Contact",
+      "description": "Contact Solissia to source fresh fruit and vegetables: finding growers, negotiating and following up your international purchases and sales."
     },
     "title": "Contact us",
     "intro": "Planning to buy or sell internationally? Tell us what you need and we'll get back to you shortly.",
@@ -164,8 +181,8 @@
   },
   "legal": {
     "metadata": {
-      "title": "Legal notice – Solissia",
-      "description": "Legal notice and terms of use of the Solissia website."
+      "title": "Legal notice",
+      "description": "Legal notice and terms of use of the Solissia website, the fresh fruit and vegetable sourcing specialist."
     },
     "breadcrumbHome": "Home",
     "title": "Legal notice",
@@ -244,7 +261,7 @@
   },
   "privacy": {
     "metadata": {
-      "title": "Privacy policy – Solissia",
+      "title": "Privacy policy",
       "description": "How Solissia collects, uses and protects your personal data."
     },
     "breadcrumbHome": "Home",
@@ -299,7 +316,7 @@
             ],
             "items": [
               "Vercel Inc. (United States): website hosting.",
-              "Supabase Inc.: database and user account authentication.",
+              "Supabase Inc.: database, user account authentication and storage of article images, hosted in the European Union (Stockholm, Sweden).",
               "Resend (United States): sending notification emails when a message is sent through the contact form."
             ],
             "after": [
@@ -356,5 +373,43 @@
         ]
       }
     ]
+  },
+  "blog": {
+    "metadata": {
+      "title": "Blog",
+      "description": "Fresh fruit and vegetable sourcing news: markets, origins, seasons, quality and logistics, by Solissia."
+    },
+    "label": "Blog",
+    "title": "Our latest articles",
+    "pageTitle": "{title} – page {n}",
+    "categories": "Categories",
+    "all": "All",
+    "empty": "No articles published yet.",
+    "back": "All articles",
+    "publishedOn": "Published on {date}",
+    "writtenBy": "Written by",
+    "share": "Share this article",
+    "latest": "Latest articles",
+    "notFound": "Article not found",
+    "loading": "Loading…",
+    "pagination": {
+      "label": "Pagination",
+      "previous": "Previous page",
+      "next": "Next page",
+      "page": "Page {n}"
+    },
+    "author": {
+      "linkedIn": "{name} on LinkedIn",
+      "x": "{name} on X",
+      "email": "Email {name}"
+    },
+    "shareButtons": {
+      "linkedIn": "Share on LinkedIn",
+      "x": "Share on X",
+      "email": "Share by email",
+      "copy": "Copy link",
+      "copied": "Link copied",
+      "copiedStatus": "Link copied to clipboard"
+    }
   }
 }

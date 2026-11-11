@@ -1,16 +1,35 @@
 import Image from "next/image";
 import { HomeSlider } from "@/components/home-slider";
-import { getDictionary } from "./dictionaries";
+import type { Metadata } from "next";
+import { organizationJsonLd, pageMetadata } from "@/lib/seo";
+import { getDictionary, getLocale } from "./dictionaries";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const { metadata } = await getDictionary();
+  return pageMetadata(
+    locale,
+    "",
+    { title: metadata.homeTitle, description: metadata.description },
+    { absoluteTitle: true },
+  );
+}
 
 export default async function Home() {
+  const locale = await getLocale();
   const { home } = await getDictionary();
+  const jsonLd = await organizationJsonLd(locale);
 
   return (
     <main className="flex-1">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <section className="relative -mt-16 h-[calc(60vh+4rem)]">
         <Image
           src="/images/home/home1.jpg"
-          alt=""
+          alt={home.imageAlts.hero}
           fill
           priority
           sizes="100vw"
@@ -38,7 +57,7 @@ export default async function Home() {
         <div className="relative h-64 sm:h-80 md:h-[480px]">
           <Image
             src="/images/home/sourcing1.jpg"
-            alt=""
+            alt={home.imageAlts.sourcing}
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"
@@ -60,7 +79,7 @@ export default async function Home() {
         <div className="relative h-64 sm:h-80 md:order-last md:h-[480px]">
           <Image
             src="/images/home/sourcing2.jpg"
-            alt=""
+            alt={home.imageAlts.custom}
             fill
             sizes="(min-width: 768px) 50vw, 100vw"
             className="object-cover"

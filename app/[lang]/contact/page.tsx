@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import type { ReactNode } from "react";
 import { ContactForm } from "@/components/contact-form";
 import { contactInfo } from "@/lib/contact";
 import { getDictionary, getLocale } from "../dictionaries";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const { contact } = await getDictionary();
-  return contact.metadata;
+  return pageMetadata(locale, "/contact", contact.metadata);
 }
 
 const InfoBlock = ({ title, children }: { title: string; children: ReactNode }) => (

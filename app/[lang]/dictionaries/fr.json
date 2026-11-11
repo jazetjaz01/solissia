@@ -1,7 +1,19 @@
 {
   "metadata": {
     "title": "Solissia",
-    "description": "Solissia, le spécialiste du sourcing fruits et légumes : nous recherchons, négocions et sécurisons vos achats et vos ventes à l'international."
+    "homeTitle": "Solissia – Sourcing de fruits et légumes frais à l'international",
+    "description": "Solissia, spécialiste du sourcing de fruits et légumes frais : nous trouvons des producteurs fiables, négocions et sécurisons vos achats et ventes à l'international.",
+    "ogImageAlt": "Solissia, sourcing de fruits et légumes frais",
+    "serviceName": "Sourcing de fruits et légumes frais",
+    "knowsAbout": [
+      "Sourcing de fruits et légumes",
+      "Fruits et légumes frais",
+      "Import-export de fruits et légumes",
+      "Recherche de producteurs et fournisseurs",
+      "Négociation d'achats internationaux",
+      "Contrôle qualité",
+      "Logistique internationale"
+    ]
   },
   "nav": {
     "home": "Accueil",
@@ -54,6 +66,11 @@
       "paragraphs": [
         "La sélection rigoureuse de nos approvisionnements est le pilier de notre modèle. Nous recherchons sans relâche les meilleures matières premières pour vous garantir une qualité irréprochable. En étant intransigeants sur l'origine de nos produits, nous vous fournissons des ingrédients d'exception, à la hauteur de vos propres exigences."
       ]
+    },
+    "imageAlts": {
+      "hero": "Fruits et légumes frais : radis, courge, kaki, avocat, coing et navet",
+      "sourcing": "Oranges mûres sur un oranger",
+      "custom": "Citrons frais entiers et coupés en tranches"
     }
   },
   "footer": {
@@ -118,8 +135,8 @@
   },
   "contact": {
     "metadata": {
-      "title": "Contact – Solissia",
-      "description": "Contactez Solissia pour vos projets d'achat et de vente à l'international."
+      "title": "Contact",
+      "description": "Contactez Solissia pour sourcer des fruits et légumes frais : recherche de producteurs, négociation et suivi de vos achats et ventes à l'international."
     },
     "title": "Contactez-nous",
     "intro": "Un projet d'achat ou de vente à l'international ? Décrivez-nous votre besoin, nous revenons vers vous rapidement.",
@@ -164,8 +181,8 @@
   },
   "legal": {
     "metadata": {
-      "title": "Mentions légales – Solissia",
-      "description": "Mentions légales et conditions d'utilisation du site Solissia."
+      "title": "Mentions légales",
+      "description": "Mentions légales et conditions d'utilisation du site Solissia, spécialiste du sourcing de fruits et légumes frais."
     },
     "breadcrumbHome": "Accueil",
     "title": "Mentions légales",
@@ -244,7 +261,7 @@
   },
   "privacy": {
     "metadata": {
-      "title": "Politique de confidentialité – Solissia",
+      "title": "Politique de confidentialité",
       "description": "Comment Solissia collecte, utilise et protège vos données personnelles."
     },
     "breadcrumbHome": "Accueil",
@@ -299,7 +316,7 @@
             ],
             "items": [
               "Vercel Inc. (États-Unis) : hébergement du site.",
-              "Supabase Inc. : base de données et authentification des comptes utilisateurs.",
+              "Supabase Inc. : base de données, authentification des comptes utilisateurs et stockage des images des articles, hébergés dans l'Union européenne (Stockholm, Suède).",
               "Resend (États-Unis) : envoi des e-mails de notification lors d'un message envoyé via le formulaire de contact."
             ],
             "after": [
@@ -356,5 +373,43 @@
         ]
       }
     ]
+  },
+  "blog": {
+    "metadata": {
+      "title": "Blog",
+      "description": "Actualités du sourcing de fruits et légumes frais : marchés, origines, saisons, qualité et logistique, par Solissia."
+    },
+    "label": "Blog",
+    "title": "Nos derniers articles",
+    "pageTitle": "{title} – page {n}",
+    "categories": "Catégories",
+    "all": "Tous",
+    "empty": "Aucun article publié pour le moment.",
+    "back": "Tous les articles",
+    "publishedOn": "Publié le {date}",
+    "writtenBy": "Rédigé par",
+    "share": "Partager l'article",
+    "latest": "Derniers articles",
+    "notFound": "Article introuvable",
+    "loading": "Chargement…",
+    "pagination": {
+      "label": "Pagination",
+      "previous": "Page précédente",
+      "next": "Page suivante",
+      "page": "Page {n}"
+    },
+    "author": {
+      "linkedIn": "{name} sur LinkedIn",
+      "x": "{name} sur X",
+      "email": "Écrire à {name}"
+    },
+    "shareButtons": {
+      "linkedIn": "Partager sur LinkedIn",
+      "x": "Partager sur X",
+      "email": "Partager par e-mail",
+      "copy": "Copier le lien",
+      "copied": "Lien copié",
+      "copiedStatus": "Lien copié dans le presse-papiers"
+    }
   }
 }

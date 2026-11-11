@@ -22,7 +22,7 @@ export const NavMenu = ({
         <NavigationMenuLink className={navigationMenuTriggerStyle()} render={<Link href={`/${locale}`} />}>{labels.home}</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()} render={<Link href="#" />}>{labels.blog}</NavigationMenuLink>
+        <NavigationMenuLink className={navigationMenuTriggerStyle()} render={<Link href={`/${locale}/actualite`} />}>{labels.blog}</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink className={navigationMenuTriggerStyle()} render={<Link href="#" />}>{labels.about}</NavigationMenuLink>

@@ -13,6 +13,19 @@ const languageNames: Record<Locale, string> = {
   en: "English",
 };
 
+const triggerClass =
+  "flex flex-col items-center gap-0.5 rounded-lg px-2 py-1 text-xs font-medium uppercase outline-none focus-visible:ring-3 focus-visible:ring-ring/50";
+
+// Same look, without the menu: shown inside <Suspense> while the page address
+// is not known yet (pages prerendered for unknown params, e.g. new articles).
+export const LanguageSwitcherFallback = ({ current }: { current: Locale }) => (
+  <span aria-hidden="true" className={triggerClass}>
+    <Globe className="size-5" strokeWidth={1.5} />
+    {current}
+  </span>
+);
+
+// Reads the page address: render inside <Suspense>.
 export const LanguageSwitcher = ({
   current,
   label,
@@ -30,7 +43,7 @@ export const LanguageSwitcher = ({
     <Menu.Root>
       <Menu.Trigger
         aria-label={`${label} : ${languageNames[current]}`}
-        className="flex flex-col items-center gap-0.5 rounded-lg px-2 py-1 text-xs font-medium uppercase outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+        className={triggerClass}
       >
         <Globe className="size-5" strokeWidth={1.5} />
         {current}

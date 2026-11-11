@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { LegalDocument, type LegalSection } from "@/components/legal-document";
 import { getDictionary, getLocale } from "../dictionaries";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const { legal } = await getDictionary();
-  return legal.metadata;
+  return pageMetadata(locale, "/legal", legal.metadata);
 }
 
 export default async function LegalPage() {

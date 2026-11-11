@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
+import { noIndex } from "@/lib/seo";
 import Link from "next/link";
 import { AuthCard } from "@/components/auth-card";
 import { AuthForm } from "@/components/auth-form";
 import { updatePassword } from "../auth/actions";
 import { getDictionary, getLocale } from "../dictionaries";
+
+// Not useful in search results.
+export async function generateMetadata(): Promise<Metadata> {
+  const { auth } = await getDictionary();
+  return { title: auth.update.title, robots: noIndex };
+}
 
 // Reached from the password reset email; the proxy requires a session.
 export default async function UpdatePasswordPage() {
