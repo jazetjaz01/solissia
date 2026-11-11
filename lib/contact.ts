@@ -1,10 +1,11 @@
 // Solissia's contact details, shown next to the contact form.
 // Leave a value empty to hide that block.
 export const contactInfo = {
-  address: [] as string[], // e.g. ["Solissia", "12 rue Exemple", "75000 Paris"]
-  mapUrl: "", // e.g. a Google Maps link
-  phone: "", // e.g. "06 00 00 00 00"
-  email: "", // e.g. "contact@solissia.com"
+  address: ["Solissia", "7 avenue de Banyuls-sur-Mer", "66100 Perpignan"],
+  mapUrl:
+    "https://www.google.com/maps/search/?api=1&query=7+avenue+de+Banyuls-sur-Mer+66100+Perpignan",
+  phone: "06 16 22 46 82",
+  email: "alami@solissia.com",
 };
 
 export const contactSubjects = [
