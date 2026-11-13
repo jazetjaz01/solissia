@@ -1,15 +1,16 @@
 {
   "metadata": {
     "title": "Solissia",
-    "homeTitle": "Solissia – International fresh fruit and vegetable sourcing",
-    "description": "Solissia, the fresh fruit and vegetable sourcing specialist: we find reliable growers, negotiate and secure your international purchases and sales.",
-    "ogImageAlt": "Solissia, fresh fruit and vegetable sourcing",
-    "serviceName": "Fresh fruit and vegetable sourcing",
+    "homeTitle": "Solissia – International food sourcing",
+    "description": "Solissia, the food sourcing specialist (fruit and vegetables, food products): we find reliable producers, negotiate and secure your international purchases and sales.",
+    "ogImageAlt": "Solissia, food sourcing",
+    "serviceName": "Food sourcing",
     "knowsAbout": [
+      "Food sourcing",
       "Fruit and vegetable sourcing",
-      "Fresh produce",
-      "Fruit and vegetable import and export",
-      "Finding growers and suppliers",
+      "Food products",
+      "Food import and export",
+      "Finding producers and suppliers",
       "International purchase negotiation",
       "Quality control",
       "International logistics"
@@ -28,7 +29,7 @@
     "signUp": "Create an account"
   },
   "home": {
-    "hero": "solissia is the fruit and vegetable sourcing specialist",
+    "hero": "solissia is the food sourcing specialist",
     "intro": {
       "lead": "Solissia finds, negotiates and secures your international purchases and sales.",
       "paragraphs": [
@@ -136,7 +137,7 @@
   "contact": {
     "metadata": {
       "title": "Contact",
-      "description": "Contact Solissia to source fresh fruit and vegetables: finding growers, negotiating and following up your international purchases and sales."
+      "description": "Contact Solissia about your international food purchases: finding producers, negotiating and following up your purchases and sales."
     },
     "title": "Contact us",
     "intro": "Planning to buy or sell internationally? Tell us what you need and we'll get back to you shortly.",
@@ -182,7 +183,7 @@
   "legal": {
     "metadata": {
       "title": "Legal notice",
-      "description": "Legal notice and terms of use of the Solissia website, the fresh fruit and vegetable sourcing specialist."
+      "description": "Legal notice and terms of use of the Solissia website, the food sourcing specialist."
     },
     "breadcrumbHome": "Home",
     "title": "Legal notice",
@@ -377,7 +378,7 @@
   "blog": {
     "metadata": {
       "title": "Blog",
-      "description": "Fresh fruit and vegetable sourcing news: markets, origins, seasons, quality and logistics, by Solissia."
+      "description": "Food sourcing news: markets, origins, seasons, quality and logistics, by Solissia."
     },
     "label": "Blog",
     "title": "Our latest articles",
@@ -465,7 +466,7 @@
       "photo": "Photo",
       "displayName": "Display name",
       "jobTitle": "Job title",
-      "jobTitlePlaceholder": "E.g. Founder, fruit and vegetable sourcing",
+      "jobTitlePlaceholder": "E.g. Founder, food sourcing",
       "bio": "Short bio",
       "links": "Public contact details",
       "linksHint": "Shown under your name on your articles. The contact email is public and can differ from your account email.",

@@ -1,14 +1,15 @@
 {
   "metadata": {
     "title": "Solissia",
-    "homeTitle": "Solissia – Sourcing de fruits et légumes frais à l'international",
-    "description": "Solissia, spécialiste du sourcing de fruits et légumes frais : nous trouvons des producteurs fiables, négocions et sécurisons vos achats et ventes à l'international.",
-    "ogImageAlt": "Solissia, sourcing de fruits et légumes frais",
-    "serviceName": "Sourcing de fruits et légumes frais",
+    "homeTitle": "Solissia – Sourcing agroalimentaire à l'international",
+    "description": "Solissia, spécialiste du sourcing agroalimentaire (fruits et légumes, produits alimentaires) : nous trouvons des producteurs fiables, négocions et sécurisons vos achats et ventes à l'international.",
+    "ogImageAlt": "Solissia, sourcing agroalimentaire",
+    "serviceName": "Sourcing agroalimentaire",
     "knowsAbout": [
+      "Sourcing agroalimentaire",
       "Sourcing de fruits et légumes",
-      "Fruits et légumes frais",
-      "Import-export de fruits et légumes",
+      "Produits alimentaires",
+      "Import-export agroalimentaire",
       "Recherche de producteurs et fournisseurs",
       "Négociation d'achats internationaux",
       "Contrôle qualité",
@@ -28,7 +29,7 @@
     "signUp": "Créer un compte"
   },
   "home": {
-    "hero": "solissia est le spécialiste du sourcing fruits et légumes",
+    "hero": "solissia est le spécialiste du sourcing en agro-alimentaire",
     "intro": {
       "lead": "Solissia recherche, négocie et sécurise vos achats et vos ventes à l'international.",
       "paragraphs": [
@@ -136,7 +137,7 @@
   "contact": {
     "metadata": {
       "title": "Contact",
-      "description": "Contactez Solissia pour sourcer des fruits et légumes frais : recherche de producteurs, négociation et suivi de vos achats et ventes à l'international."
+      "description": "Contactez Solissia pour vos achats agroalimentaires à l'international : recherche de producteurs, négociation et suivi de vos achats et ventes."
     },
     "title": "Contactez-nous",
     "intro": "Un projet d'achat ou de vente à l'international ? Décrivez-nous votre besoin, nous revenons vers vous rapidement.",
@@ -182,7 +183,7 @@
   "legal": {
     "metadata": {
       "title": "Mentions légales",
-      "description": "Mentions légales et conditions d'utilisation du site Solissia, spécialiste du sourcing de fruits et légumes frais."
+      "description": "Mentions légales et conditions d'utilisation du site Solissia, spécialiste du sourcing agroalimentaire."
     },
     "breadcrumbHome": "Accueil",
     "title": "Mentions légales",
@@ -377,7 +378,7 @@
   "blog": {
     "metadata": {
       "title": "Blog",
-      "description": "Actualités du sourcing de fruits et légumes frais : marchés, origines, saisons, qualité et logistique, par Solissia."
+      "description": "Actualités du sourcing agroalimentaire : marchés, origines, saisons, qualité et logistique, par Solissia."
     },
     "label": "Blog",
     "title": "Nos derniers articles",
@@ -465,7 +466,7 @@
       "photo": "Photo",
       "displayName": "Nom affiché",
       "jobTitle": "Fonction",
-      "jobTitlePlaceholder": "Ex. Fondateur, sourcing fruits et légumes",
+      "jobTitlePlaceholder": "Ex. Fondateur, sourcing agroalimentaire",
       "bio": "Courte présentation",
       "links": "Coordonnées publiques",
       "linksHint": "Affichées sous votre nom sur vos articles. L'e-mail de contact est public et peut être différent de celui de votre compte.",
