@@ -25,9 +25,6 @@ export const NavMenu = ({
         <NavigationMenuLink className={navigationMenuTriggerStyle()} render={<Link href={`/${locale}/actualite`} />}>{labels.blog}</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink className={navigationMenuTriggerStyle()} render={<Link href="#" />}>{labels.about}</NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
         <NavigationMenuLink className={navigationMenuTriggerStyle()} render={<Link href={`/${locale}/contact`} />}>{labels.contact}</NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>

@@ -5,7 +5,6 @@ import { Logo } from "@/components/logo";
 import { format } from "@/lib/i18n";
 
 const links = [
-  { key: "about", href: "#about" },
   { key: "contact", href: "/contact" },
   { key: "legal", href: "/legal" },
   { key: "privacy", href: "/privacy" },
