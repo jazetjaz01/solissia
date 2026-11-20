@@ -526,26 +526,11 @@
           "We offer several varieties of cocoa powder to meet the needs of every application:"
         ],
         "varieties": [
-          {
-            "name": "Natural",
-            "detail": "10-12% fat"
-          },
-          {
-            "name": "Alkalised (Dutch processed)",
-            "detail": "10-12% fat"
-          },
-          {
-            "name": "Black",
-            "detail": "10-12%, heavily alkalised"
-          },
-          {
-            "name": "High-Fat",
-            "detail": "20-24%"
-          },
-          {
-            "name": "Low-Fat",
-            "detail": "6-8% fat"
-          }
+          "Natural Cocoa Powder",
+          "Alkalized or Dutch Process Cocoa Powder",
+          "Black Cocoa Powder",
+          "High-Fat Cocoa Powder",
+          "Low-Fat Cocoa Powder"
         ]
       }
     ]

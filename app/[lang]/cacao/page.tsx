@@ -67,12 +67,10 @@ export default async function CacaoPage() {
                 ))}
                 {"varieties" in product && product.varieties && (
                   <ul className="space-y-2">
-                    {product.varieties.map(({ name, detail }) => (
-                      <li key={name} className="flex gap-3">
+                    {product.varieties.map((variety) => (
+                      <li key={variety} className="flex gap-3">
                         <span aria-hidden="true" className="mt-3 h-0.5 w-4 shrink-0 bg-amber-300" />
-                        <span>
-                          <span className="font-medium text-black">{name}</span> : {detail}
-                        </span>
+                        <span>{variety}</span>
                       </li>
                     ))}
                   </ul>

@@ -526,26 +526,11 @@
           "Nous proposons plusieurs variétés de poudre de cacao, pour répondre aux besoins de chaque application :"
         ],
         "varieties": [
-          {
-            "name": "Naturelle",
-            "detail": "10-12 % de matières grasses"
-          },
-          {
-            "name": "Alcalinisée (Dutch processed)",
-            "detail": "10-12 % de matières grasses"
-          },
-          {
-            "name": "Noire (Black)",
-            "detail": "10-12 %, fortement alcalinisée"
-          },
-          {
-            "name": "Riche en matières grasses (High-Fat)",
-            "detail": "20-24 %"
-          },
-          {
-            "name": "Allégée (Low-Fat)",
-            "detail": "6-8 % de matières grasses"
-          }
+          "Poudre de cacao naturelle",
+          "Poudre de cacao alcalinisée (Dutch process)",
+          "Poudre de cacao noire",
+          "Poudre de cacao riche en matières grasses",
+          "Poudre de cacao pauvre en matières grasses"
         ]
       }
     ]
