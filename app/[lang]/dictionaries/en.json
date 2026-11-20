@@ -501,6 +501,53 @@
     "paragraphs": [
       "Made from the dried beans of the cacao tree (Theobroma cacao), cocoa is the essential ingredient of chocolate, valued as much for its rich aromas as for its nutritional qualities. Sourced from carefully chosen plantations, each bean expresses the uniqueness of its terroir and offers a wide range of flavours.",
       "We offer a complete range of cocoa derivatives, rigorously selected to guarantee you superior quality."
+    ],
+    "products": [
+      {
+        "title": "Cocoa beans",
+        "imageAlt": "Dried cocoa beans",
+        "paragraphs": [
+          "We source premium-quality cocoa beans from producers in Ghana, Côte d’Ivoire, Ecuador and Peru.",
+          "Each origin brings its own aromatic profile. Our beans are an ideal base for chocolate making and for processing into finished products."
+        ]
+      },
+      {
+        "title": "Cocoa butter",
+        "imageAlt": "Pieces of cocoa butter on a wooden spoon",
+        "paragraphs": [
+          "Pressed from the beans, our cocoa butter is available natural or refined (deodorised).",
+          "Sourced from West Africa and Latin America, it is delivered in blocks or in liquid form, mainly for the European market."
+        ]
+      },
+      {
+        "title": "Cocoa powder",
+        "imageAlt": "Cocoa powder",
+        "paragraphs": [
+          "We offer several varieties of cocoa powder to meet the needs of every application:"
+        ],
+        "varieties": [
+          {
+            "name": "Natural",
+            "detail": "10-12% fat"
+          },
+          {
+            "name": "Alkalised (Dutch processed)",
+            "detail": "10-12% fat"
+          },
+          {
+            "name": "Black",
+            "detail": "10-12%, heavily alkalised"
+          },
+          {
+            "name": "High-Fat",
+            "detail": "20-24%"
+          },
+          {
+            "name": "Low-Fat",
+            "detail": "6-8% fat"
+          }
+        ]
+      }
     ]
   }
 }

@@ -501,6 +501,53 @@
     "paragraphs": [
       "Issu des fèves séchées du cacaoyer (Theobroma cacao), le cacao est l’ingrédient fondamental du chocolat, apprécié autant pour la richesse de ses arômes que pour ses qualités nutritionnelles. Provenant de plantations rigoureusement choisies, chaque fève exprime la singularité de son terroir et déploie une large palette de saveurs.",
       "Nous mettons à votre disposition une gamme complète de dérivés du cacao, sélectionnés avec exigence afin de vous assurer une qualité supérieure."
+    ],
+    "products": [
+      {
+        "title": "Fèves de cacao",
+        "imageAlt": "Fèves de cacao séchées",
+        "paragraphs": [
+          "Nous sélectionnons des fèves de cacao de qualité supérieure auprès de producteurs du Ghana, de Côte d’Ivoire, d’Équateur et du Pérou.",
+          "Chaque origine apporte un profil aromatique qui lui est propre. Nos fèves constituent une base de choix pour la fabrication de chocolat et la transformation en produits finis."
+        ]
+      },
+      {
+        "title": "Beurre de cacao",
+        "imageAlt": "Morceaux de beurre de cacao sur une cuillère en bois",
+        "paragraphs": [
+          "Extrait par pression des fèves, notre beurre de cacao est proposé à l’état naturel ou raffiné (désodorisé).",
+          "Issu d’Afrique de l’Ouest et d’Amérique latine, il est livré en blocs ou sous forme liquide, principalement à destination du marché européen."
+        ]
+      },
+      {
+        "title": "Poudre de cacao",
+        "imageAlt": "Poudre de cacao",
+        "paragraphs": [
+          "Nous proposons plusieurs variétés de poudre de cacao, pour répondre aux besoins de chaque application :"
+        ],
+        "varieties": [
+          {
+            "name": "Naturelle",
+            "detail": "10-12 % de matières grasses"
+          },
+          {
+            "name": "Alcalinisée (Dutch processed)",
+            "detail": "10-12 % de matières grasses"
+          },
+          {
+            "name": "Noire (Black)",
+            "detail": "10-12 %, fortement alcalinisée"
+          },
+          {
+            "name": "Riche en matières grasses (High-Fat)",
+            "detail": "20-24 %"
+          },
+          {
+            "name": "Allégée (Low-Fat)",
+            "detail": "6-8 % de matières grasses"
+          }
+        ]
+      }
     ]
   }
 }

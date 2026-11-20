@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { pageMetadata } from "@/lib/seo";
 import { getDictionary, getLocale } from "../dictionaries";
+
+// Photos of the products, in the order of the dictionary's "products" list.
+const productImages = [
+  "/images/cacao/cacao1.jpg",
+  "/images/cacao/beurre2.jpg",
+  "/images/cacao/poudre3.jpg",
+];
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
@@ -31,6 +39,49 @@ export default async function CacaoPage() {
           ))}
         </div>
       </section>
+      {/* Same layout as the home page sections: image and text side by side,
+          the image switching sides from one product to the next. */}
+      <div className="pb-12 md:pb-24">
+        {t.products.map((product, index) => (
+          <section
+            key={product.title}
+            className="mx-auto grid max-w-(--breakpoint-2xl) items-center gap-8 px-4 py-12 sm:px-6 md:grid-cols-2 md:gap-0 md:py-0 md:px-[calc(1.5rem+3.25rem)] lg:px-[calc(2rem+3.25rem)]"
+          >
+            <div className={`relative h-64 sm:h-80 md:h-[480px] ${index % 2 === 1 ? "md:order-last" : ""}`}>
+              <Image
+                src={productImages[index]}
+                alt={product.imageAlt}
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="md:px-10 lg:px-16">
+              <h2 className="text-center text-2xl font-semibold leading-tight text-black sm:text-4xl">
+                {product.title}
+              </h2>
+              <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-amber-300" />
+              <div className="mt-8 space-y-4 text-lg leading-relaxed text-black/80">
+                {product.paragraphs.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+                {"varieties" in product && product.varieties && (
+                  <ul className="space-y-2">
+                    {product.varieties.map(({ name, detail }) => (
+                      <li key={name} className="flex gap-3">
+                        <span aria-hidden="true" className="mt-3 h-0.5 w-4 shrink-0 bg-amber-300" />
+                        <span>
+                          <span className="font-medium text-black">{name}</span> : {detail}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>
+          </section>
+        ))}
+      </div>
     </main>
   );
 }
