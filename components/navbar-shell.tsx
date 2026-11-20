@@ -38,10 +38,11 @@ export const NavbarShell = ({ children }: { children: ReactNode }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Home page is /fr or /en
+  // Pages opening on a full-width banner: home (/fr, /en) and /fr/cacao, /en/cacao
   const segments = pathname.split("/").filter(Boolean);
-  const isHome = segments.length === 1 && hasLocale(segments[0]);
-  const transparent = isHome && !scrolled;
+  const hasBanner =
+    hasLocale(segments[0]) && (segments.length === 1 || (segments.length === 2 && segments[1] === "cacao"));
+  const transparent = hasBanner && !scrolled;
 
   return <NavbarFrame transparent={transparent}>{children}</NavbarFrame>;
 };

@@ -497,6 +497,10 @@
       "title": "Cocoa",
       "description": "Solissia supports your international cocoa purchases: finding producers, negotiating and following up."
     },
-    "title": "Cocoa"
+    "title": "Cocoa",
+    "paragraphs": [
+      "Made from the dried beans of the cacao tree (Theobroma cacao), cocoa is the essential ingredient of chocolate, valued as much for its rich aromas as for its nutritional qualities. Sourced from carefully chosen plantations, each bean expresses the uniqueness of its terroir and offers a wide range of flavours.",
+      "We offer a complete range of cocoa derivatives, rigorously selected to guarantee you superior quality."
+    ]
   }
 }
