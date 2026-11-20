@@ -19,6 +19,7 @@
   "nav": {
     "home": "Accueil",
     "blog": "Actualité",
+    "cacao": "Cacao",
     "about": "À propos",
     "contact": "Contact",
     "signIn": "Se connecter",
@@ -490,5 +491,12 @@
       "contactEmail": "Adresse e-mail de contact invalide.",
       "generic": "L'enregistrement a échoué. Réessayez."
     }
+  },
+  "cacao": {
+    "metadata": {
+      "title": "Cacao",
+      "description": "Solissia vous accompagne dans vos achats de cacao à l’international : recherche de producteurs, négociation et suivi."
+    },
+    "title": "Cacao"
   }
 }

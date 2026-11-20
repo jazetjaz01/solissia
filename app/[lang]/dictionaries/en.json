@@ -19,6 +19,7 @@
   "nav": {
     "home": "Home",
     "blog": "News",
+    "cacao": "Cocoa",
     "about": "About",
     "contact": "Contact",
     "signIn": "Sign in",
@@ -490,5 +491,12 @@
       "contactEmail": "Invalid contact email address.",
       "generic": "Saving failed. Please try again."
     }
+  },
+  "cacao": {
+    "metadata": {
+      "title": "Cocoa",
+      "description": "Solissia supports your international cocoa purchases: finding producers, negotiating and following up."
+    },
+    "title": "Cocoa"
   }
 }
