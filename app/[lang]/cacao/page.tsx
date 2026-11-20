@@ -23,7 +23,7 @@ export default async function CacaoPage() {
     <main className="flex-1">
       {/* Same banner as the home page, under the transparent navbar.
           Cocoa-brown background until a cacao photo is added. */}
-      <section className="relative -mt-16 h-[calc(35vh+4rem)] bg-[#3b2416]">
+      <section className="relative -mt-16 h-[calc(20vh+4rem)] bg-[#3b2416]">
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative mx-auto flex h-full max-w-(--breakpoint-2xl) flex-col items-center justify-center px-4 pt-16 sm:px-6 lg:px-8">
           <h1 className="text-center text-4xl font-semibold leading-tight text-white sm:text-7xl">
