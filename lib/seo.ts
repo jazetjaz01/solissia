@@ -6,7 +6,7 @@ import { defaultLocale, locales, type Locale } from "@/lib/i18n";
 export const siteUrl = "https://www.solissia.com";
 
 // Pages listed in the sitemap, without the language prefix.
-export const publicPaths = ["", "/actualite", "/cacao", "/contact", "/legal", "/privacy"] as const;
+export const publicPaths = ["", "/actualite", "/cacao", "/cafe", "/contact", "/legal", "/privacy"] as const;
 
 // Canonical URL of the page plus its versions in the other languages (hreflang),
 // so Google shows French searchers /fr and English searchers /en.

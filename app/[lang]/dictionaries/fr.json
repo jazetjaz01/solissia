@@ -20,6 +20,7 @@
     "home": "Accueil",
     "blog": "Actualité",
     "cacao": "Cacao",
+    "cafe": "Café",
     "about": "À propos",
     "contact": "Contact",
     "signIn": "Se connecter",
@@ -531,6 +532,35 @@
           "Poudre de cacao noire",
           "Poudre de cacao riche en matières grasses",
           "Poudre de cacao pauvre en matières grasses"
+        ]
+      }
+    ]
+  },
+  "cafe": {
+    "metadata": {
+      "title": "Café",
+      "description": "Solissia vous accompagne dans vos achats de café vert à l’international : Robusta et Arabica sélectionnés auprès de partenaires de confiance."
+    },
+    "title": "Café",
+    "paragraphs": [
+      "Le café est issu des graines torréfiées de différentes espèces de caféiers. La torréfaction transforme les propriétés chimiques et gustatives des grains verts et révèle toute la richesse de leur palette aromatique.",
+      "Notre gamme de cafés est le fruit d’une collaboration durable avec des partenaires de confiance, sélectionnés avec soin pour leur engagement en faveur de l’excellence et du développement durable."
+    ],
+    "products": [
+      {
+        "title": "Robusta",
+        "imageAlt": "Grains de café Robusta",
+        "paragraphs": [
+          "Issu de l’espèce Coffea canephora, le Robusta est cultivé en basse altitude dans les régions chaudes et humides d’Afrique, d’Asie et d’Amérique latine. Robuste et productif, il résiste mieux aux maladies que l’Arabica.",
+          "Il donne un café corsé et charpenté, à l’amertume marquée et à la teneur en caféine élevée. Apprécié pour son corps et sa crème, il entre dans la composition des expressos, des mélanges et des cafés solubles."
+        ]
+      },
+      {
+        "title": "Arabica",
+        "imageAlt": "Grains de café Arabica",
+        "paragraphs": [
+          "Issu de l’espèce Coffea arabica, l’Arabica pousse en altitude, sous des climats plus tempérés. Plus exigeant à cultiver, il est l’espèce la plus répandue dans le monde.",
+          "Il offre un café fin et aromatique, à l’acidité délicate, aux notes fruitées, florales ou chocolatées selon son terroir. Il est privilégié pour les cafés de spécialité et les cafés d’origine."
         ]
       }
     ]

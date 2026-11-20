@@ -3,7 +3,7 @@ import { getArticleSlugs } from "@/lib/articles";
 import { locales } from "@/lib/i18n";
 import { publicPaths, siteUrl } from "@/lib/seo";
 
-const priorities: Record<string, number> = { "": 1, "/actualite": 0.8, "/cacao": 0.8, "/contact": 0.8 };
+const priorities: Record<string, number> = { "": 1, "/actualite": 0.8, "/cacao": 0.8, "/cafe": 0.8, "/contact": 0.8 };
 
 // One entry per page and language, each listing its other language versions,
 // plus every published article (each in its own language).

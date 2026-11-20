@@ -25,6 +25,9 @@ export const NavbarFrame = ({
   </header>
 );
 
+// Pages (after the language) that open on a full-width banner, like the home page.
+const bannerPages = ["cacao", "cafe"];
+
 // Transparent over the home hero image, white once the user scrolls.
 // Reads the page address: render inside <Suspense> (fallback: a white NavbarFrame).
 export const NavbarShell = ({ children }: { children: ReactNode }) => {
@@ -38,10 +41,11 @@ export const NavbarShell = ({ children }: { children: ReactNode }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Pages opening on a full-width banner: home (/fr, /en) and /fr/cacao, /en/cacao
+  // Pages opening on a full-width banner: home (/fr, /en) and the product pages (/fr/cacao, /en/cafe…)
   const segments = pathname.split("/").filter(Boolean);
   const hasBanner =
-    hasLocale(segments[0]) && (segments.length === 1 || (segments.length === 2 && segments[1] === "cacao"));
+    hasLocale(segments[0]) &&
+    (segments.length === 1 || (segments.length === 2 && bannerPages.includes(segments[1])));
   const transparent = hasBanner && !scrolled;
 
   return <NavbarFrame transparent={transparent}>{children}</NavbarFrame>;
